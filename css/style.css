@@ -24,6 +24,7 @@ button.md-button.md-fab.md-theme-purple {
 }
 .md-tabs .md-tab-header.md-active i, .md-tabs .md-tab-header.md-active span {
   background: -webkit-linear-gradient(left top, #8728fe, #517bfc);
+  background: linear-gradient(left top, #8728fe, #517bfc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
