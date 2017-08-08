@@ -3,6 +3,9 @@ button.md-button.md-fab.md-theme-purple {
     background: -webkit-linear-gradient(left top, rgb(135, 40, 254), rgb(81, 123, 252));
     color: #ffffff;
 }
+.md-speed-dial [md-fab-trigger]~.md-button {
+  transition: all .4s cubic-bezier(.25, .8, .25, 2)
+}
 /*tabs*/
 .md-tabs .md-tabs-navigation.md-has-icon.md-has-label {
     min-height: 72px;
