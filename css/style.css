@@ -4,6 +4,10 @@ button.md-button.md-fab.md-theme-purple {
   color: #ffffff;
 }
 
+.md-speed-dial [md-fab-trigger] ~ .md-button {
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 2);
+}
+
 /*tabs*/
 .md-tabs .md-tabs-navigation.md-has-icon.md-has-label {
   min-height: 72px;
@@ -11,6 +15,7 @@ button.md-button.md-fab.md-theme-purple {
   bottom: 0;
   width: 100vw;
   background: #ffffff;
+  box-shadow: 0px 5px 20px 0px black;
 }
 
 .md-tabs .md-tab-header {
