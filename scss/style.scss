@@ -1,0 +1,34 @@
+/*speed-dial*/
+button.md-button.md-fab.md-theme-purple {
+    background: -webkit-linear-gradient(left top, rgb(135, 40, 254), rgb(81, 123, 252));
+    color: #ffffff;
+}
+/*tabs*/
+.md-tabs .md-tabs-navigation.md-has-icon.md-has-label {
+    min-height: 72px;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+	 background: #ffffff;
+}
+.md-tabs .md-tab-header{
+	width: 10vw;
+	text-transform: initial;
+	&.md-active{
+		i, span{
+			background: -webkit-linear-gradient(left top, rgb(135, 40, 254), rgba(81, 123, 252, 1));
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+	}
+	i, span{
+		color:rgba(0, 0, 0, 0.42);
+	}
+}
+.md-theme-default.md-tabs>.md-tabs-navigation .md-tab-indicator {
+    background-color: #ffffff !important;
+}
+/*ripple*/
+.md-theme-default.md-tabs>.md-tabs-navigation .md-tab-header.md-active, .md-theme-default.md-tabs>.md-tabs-navigation .md-tab-header:focus, .md-theme-default.md-tabs>.md-tabs-navigation .md-tab-header {
+    color: rgba(0, 0, 0, 0.87) !important;
+}

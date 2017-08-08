@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Vue Material Tabs</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+<link rel='stylesheet prefetch' href='https://unpkg.com/vue-material@latest/dist/vue-material.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div id="main">
+	
+	<md-toolbar>
+   	<h1 class="md-title">My Title</h1>
+	</md-toolbar>
+	
+	<md-speed-dial md-open="hover" md-direction="bottom" class="md-fab-top-right" md-theme="purple">
+		<md-button class="md-fab" md-fab-trigger>
+			<md-icon md-icon-morph>close</md-icon>
+		 	<md-icon>add</md-icon>
+		</md-button>
+		<md-button class="md-fab md-primary md-mini md-clean">
+			<md-icon>description</md-icon>
+			<md-tooltip md-direction="left">Curriculum Vitae</md-tooltip>
+	   </md-button>
+		<md-button class="md-fab md-primary md-mini md-clean">
+			<md-icon>turned_in</md-icon>
+		 	<md-tooltip md-direction="left">UX & VR Blog</md-tooltip>
+		</md-button>
+		<md-button class="md-fab md-primary md-mini md-clean">
+			<md-icon>language</md-icon>
+			<md-tooltip md-direction="left">French Translation</md-tooltip>
+		</md-button>
+	</md-speed-dial>
+	
+	<md-tabs md-centered>
+	  <md-tab md-label="Home" md-icon="home">
+		 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorum quas amet cum vitae, omnis! Illum quas voluptatem, expedita iste, dicta ipsum ea veniam dolore in, quod saepe reiciendis nihil.</p>
+	  </md-tab>
+
+	  <md-tab md-label="Profile" md-icon="account_circle">
+		 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorum quas amet cum vitae, omnis! Illum quas voluptatem, expedita iste, dicta ipsum ea veniam dolore in, quod saepe reiciendis nihil.</p>
+		 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorum quas amet cum vitae, omnis! Illum quas voluptatem, expedita iste, dicta ipsum ea veniam dolore in, quod saepe reiciendis nihil.</p>
+	  </md-tab>
+
+	  <md-tab md-label="Skills" md-icon="assessment">
+		 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorum quas.</p>
+	  </md-tab>
+
+	  <md-tab md-label="Projects" md-icon="assignment">
+		 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorum quas.</p>
+	  </md-tab>
+
+		<md-tab md-label="Contact" md-icon="chat">
+		 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorum quas.</p>
+	  </md-tab>
+	</md-tabs>
+	
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.6/vue.min.js'></script>
+<script src='https://unpkg.com/vue-material@latest'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
