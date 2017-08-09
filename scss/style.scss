@@ -1,12 +1,41 @@
-/*speed-dial*/
-button.md-button.md-fab.md-theme-purple {
-    background: -webkit-linear-gradient(left top, rgb(135, 40, 254), rgb(81, 123, 252));
-    color: #ffffff;
+$break-small: 420px;
+$break-large: 1200px;
+
+/*Toolbar*/
+.md-toolbar {
+    background: -webkit-linear-gradient(left top, #8728fe, #517bfc);
+    justify-content: space-between;
+
+    img {
+        height: 5vh !important;
+        margin-left: 2vw;
+    }
+
+    .me-head {
+        flex: 1 1 0%;
+        max-width: 140px;
+    }
 }
+
+/*Speed-dial*/
+button.md-button.md-fab.md-theme-purple {
+    background: #ffffff;
+    .md-icon {
+        background: -webkit-linear-gradient(left top, rgb(135, 40, 254), rgb(81, 123, 252));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.md-button:hover:not([disabled]):not(.md-raised) {
+    background-color: rgb(255, 255, 255);
+}
+
 .md-speed-dial [md-fab-trigger]~.md-button {
   transition: all .4s cubic-bezier(.25, .8, .25, 2)
 }
-/*tabs*/
+
+/*Tabs*/
 .md-tabs .md-tabs-navigation.md-has-icon.md-has-label {
     min-height: 72px;
     position: fixed;
@@ -15,6 +44,7 @@ button.md-button.md-fab.md-theme-purple {
 	 background: #ffffff;
      box-shadow: 0px 5px 20px 0px black;
 }
+
 .md-tabs .md-tab-header{
 	width: 10vw;
 	text-transform: initial;
@@ -30,10 +60,25 @@ button.md-button.md-fab.md-theme-purple {
 		color:rgba(0, 0, 0, 0.42);
 	}
 }
-.md-theme-default.md-tabs>.md-tabs-navigation .md-tab-indicator {
-    background-color: #ffffff !important;
+
+.md-theme-default.md-tabs > .md-tabs-navigation .md-tab-indicator {
+    background: -webkit-linear-gradient(left top, #8728fe, #517bfc);
+    height: 5px;
 }
-/*ripple*/
-.md-theme-default.md-tabs>.md-tabs-navigation .md-tab-header.md-active, .md-theme-default.md-tabs>.md-tabs-navigation .md-tab-header:focus, .md-theme-default.md-tabs>.md-tabs-navigation .md-tab-header {
+
+.md-tabs .md-tabs-navigation-scroll-container, .md-tabs .md-tabs-navigation-container {
+    @media screen and (max-width: $break-small) {
+        width: 100vw;
+        justify-content: space-between;
+    }
+}
+
+/*Ripple*/
+.md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header.md-active, .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header:focus, .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header {
     color: rgba(0, 0, 0, 0.87) !important;
+}
+
+/*Select*/
+.md-theme-default :not(input):not(textarea)::selection{
+    background: #517bfc !important;
 }
