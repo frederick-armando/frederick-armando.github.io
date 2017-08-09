@@ -4,7 +4,7 @@
   justify-content: space-between; }
   .md-toolbar img {
     height: 5vh !important;
-    margin-left: 2vw; }
+    margin-left: 16px; }
   .md-toolbar .me-head {
     flex: 1 1 0%;
     max-width: 140px; }
