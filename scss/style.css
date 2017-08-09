@@ -31,7 +31,7 @@ button.md-button.md-fab.md-theme-purple {
   bottom: 0;
   width: 100vw;
   background: #ffffff;
-  box-shadow: 0px 5px 20px 0px black; }
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25); }
 
 .md-tabs .md-tab-header {
   width: 10vw;

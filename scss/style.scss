@@ -22,6 +22,7 @@ $break-large: 1200px;
 /*Speed-dial*/
 button.md-button.md-fab.md-theme-purple {
     background: #ffffff;
+
     .md-icon {
         background: -webkit-linear-gradient(left top, rgb(135, 40, 254), rgb(81, 123, 252));
         -webkit-background-clip: text;
@@ -43,13 +44,14 @@ button.md-button.md-fab.md-theme-purple {
     position: fixed;
     bottom: 0;
     width: 100vw;
-	background: #ffffff;
-    box-shadow: 0px 5px 20px 0px black;
+    background: #ffffff;
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
 .md-tabs .md-tab-header{
 	width: 10vw;
 	text-transform: initial;
+
 	&.md-active{
 		i, span{
 			background: -webkit-linear-gradient(left top, rgb(135, 40, 254), rgba(81, 123, 252, 1));
@@ -58,6 +60,7 @@ button.md-button.md-fab.md-theme-purple {
 			-webkit-text-fill-color: transparent;
 		}
 	}
+
 	i, span{
 		color:rgba(0, 0, 0, 0.42);
 	}
