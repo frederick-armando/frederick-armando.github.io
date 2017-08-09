@@ -48,8 +48,9 @@
 	
 	<md-tabs md-centered>
 	  <md-tab md-label="Home" md-icon="home">
-		 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorum quas amet cum vitae, omnis! Illum quas voluptatem, expedita iste, dicta ipsum ea veniam dolore in, quod saepe reiciendis nihil.</p>
-	  </md-tab>
+        <img src="img/Logo_Full.svg" id="logo" alt="Logo">
+        <h2><span id="monage"></span> years old, UI & UX Designer</h2>
+      </md-tab>
 
 	  <md-tab md-label="Profile" md-icon="account_circle">
 		 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorum quas amet cum vitae, omnis! Illum quas voluptatem, expedita iste, dicta ipsum ea veniam dolore in, quod saepe reiciendis nihil.</p>
@@ -74,6 +75,22 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.6/vue.min.js'></script>
 <script src='https://unpkg.com/vue-material@latest'></script>
 <script src="js/index.js"></script>
+
+    <script type="text/javascript">
+        function getAge(dateString) {
+            var today = new Date();
+            var birthDate = new Date(dateString);
+            var age = today.getFullYear() - birthDate.getFullYear();
+            var m = today.getMonth() - birthDate.getMonth();
+            if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                age--;
+            }
+            return age;
+            console.log('age: ' + getAge("1995/04/04"));
+        }
+
+        document.getElementById('monage').innerHTML = getAge("1995/04/04");
+    </script>
 
 </body>
 </html>
