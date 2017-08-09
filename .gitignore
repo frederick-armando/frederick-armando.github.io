@@ -5720,3 +5720,11 @@ node_modules/vue-touch/LICENSE
 node_modules/vue-touch/package.json
 node_modules/vue-touch/README.md
 Web.config
+node_modules/vue-swipe-tab/.npmignore
+node_modules/vue-swipe-tab/index.js
+node_modules/vue-swipe-tab/lib/index.vue
+node_modules/vue-swipe-tab/lib/tab.vue
+node_modules/vue-swipe-tab/LICENCE
+node_modules/vue-swipe-tab/package.json
+node_modules/vue-swipe-tab/README.md
+npm-debug.log

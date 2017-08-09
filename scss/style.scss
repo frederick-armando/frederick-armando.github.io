@@ -1,10 +1,10 @@
-$break-small: 420px;
+﻿$break-small: 420px;
 $break-medium: 780px;
 $break-large: 1200px;
 
 /*Toolbar*/
 .md-toolbar {
-    background: -webkit-linear-gradient(left top, #8728fe, #517bfc);
+    background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
     justify-content: space-between;
 
     img {
@@ -24,7 +24,7 @@ button.md-button.md-fab.md-theme-purple {
     background: #ffffff;
 
     .md-icon {
-        background: -webkit-linear-gradient(left top, rgb(135, 40, 254), rgb(81, 123, 252));
+        background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -48,26 +48,29 @@ button.md-button.md-fab.md-theme-purple {
     box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
-.md-tabs .md-tab-header{
-	width: 10vw;
-	text-transform: initial;
+.md-tabs .md-tab-header {
+    width: 10vw;
+    text-transform: initial;
 
-	&.md-active{
-		i, span{
-			background: -webkit-linear-gradient(left top, rgb(135, 40, 254), rgba(81, 123, 252, 1));
-			background: linear-gradient(left top, rgb(135, 40, 254), rgba(81, 123, 252, 1));
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-		}
-	}
+    &.md-active {
+        i, span {
+            background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
 
-	i, span{
-		color:rgba(0, 0, 0, 0.42);
-	}
+        span {
+            font-weight: 800;
+        }
+    }
+
+    i, span {
+        color: rgba(0, 0, 0, 0.42);
+    }
 }
 
 .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-indicator {
-    background: -webkit-linear-gradient(left top, #8728fe, #517bfc);
+    background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
     height: 5px;
 }
 
@@ -88,6 +91,7 @@ button.md-button.md-fab.md-theme-purple {
         margin-right: 5px;
     }
 }
+
 /*Ripple*/
 .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header.md-active, .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header:focus, .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header {
     color: rgba(0, 0, 0, 0.87) !important;
