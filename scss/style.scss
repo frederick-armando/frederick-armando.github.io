@@ -65,11 +65,12 @@ button.md-button.md-fab.md-theme-purple {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: center;
+        text-align: justify;
     }
 
     .md-tabs-content, .md-tab {
         min-height: calc(100vh - 136px) !important;
+        margin-bottom: 64px;
     }
 }
 
