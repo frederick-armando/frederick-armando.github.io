@@ -48,6 +48,20 @@ button.md-button.md-fab.md-theme-purple {
     box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
+.md-tabs {
+    .md-tab {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .md-tabs-content, .md-tab {
+        height: calc(100vh - 136px) !important;
+    }
+}
+
 .md-tabs .md-tab-header {
     width: 10vw;
     text-transform: initial;
@@ -90,6 +104,11 @@ button.md-button.md-fab.md-theme-purple {
         margin-bottom: 0px;
         margin-right: 5px;
     }
+}
+
+/*Content*/
+#logo{
+    height: 150px;
 }
 
 /*Ripple*/
