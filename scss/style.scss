@@ -1,4 +1,15 @@
-﻿$break-small: 420px;
+﻿@font-face {
+    font-family: Gilroy;
+    src: url("fonts/Gilroy.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Gilroy-Bold;
+    font-weight: bold;
+    src: url("fonts/Gilroy-Bold.otf") format("opentype");
+}
+
+$break-small: 420px;
 $break-medium: 780px;
 $break-large: 1200px;
 
@@ -58,7 +69,7 @@ button.md-button.md-fab.md-theme-purple {
     }
 
     .md-tabs-content, .md-tab {
-        height: calc(100vh - 136px) !important;
+        min-height: calc(100vh - 136px) !important;
     }
 }
 
@@ -107,8 +118,15 @@ button.md-button.md-fab.md-theme-purple {
 }
 
 /*Content*/
-#logo{
-    height: 150px;
+#logo {
+    max-height: 150px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+h2 {
+    font-family: Gilroy;
+    font-weight: 500;
 }
 
 /*Ripple*/

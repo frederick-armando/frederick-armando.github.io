@@ -1,4 +1,13 @@
-﻿/*Toolbar*/
+﻿@font-face {
+  font-family: Gilroy;
+  src: url("fonts/Gilroy.otf") format("opentype"); }
+
+@font-face {
+  font-family: Gilroy-Bold;
+  font-weight: bold;
+  src: url("fonts/Gilroy-Bold.otf") format("opentype"); }
+
+/*Toolbar*/
 .md-toolbar {
   background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
   justify-content: space-between; }
@@ -41,7 +50,7 @@ button.md-button.md-fab.md-theme-purple {
   text-align: center; }
 
 .md-tabs .md-tabs-content, .md-tabs .md-tab {
-  height: calc(100vh - 136px) !important; }
+  min-height: calc(100vh - 136px) !important; }
 
 .md-tabs .md-tab-header {
   width: 10vw;
@@ -73,7 +82,13 @@ button.md-button.md-fab.md-theme-purple {
 
 /*Content*/
 #logo {
-  height: 150px; }
+  max-height: 150px;
+  margin-left: 15px;
+  margin-right: 15px; }
+
+h2 {
+  font-family: Gilroy;
+  font-weight: 500; }
 
 /*Ripple*/
 .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header.md-active, .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header:focus, .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header {
