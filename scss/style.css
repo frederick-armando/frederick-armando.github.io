@@ -27,6 +27,11 @@ button.md-button.md-fab.md-theme-purple {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
 
+i.md-icon.md-theme-purple.material-icons {
+  background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
 .md-button:hover:not([disabled]):not(.md-raised) {
   background-color: white; }
 
@@ -95,14 +100,11 @@ h2 {
   font-family: "Gilroy", Roboto, Arial, sans-serif;
   font-weight: 500; }
 
-a {
-  color: #517bfc !important;
-  /*background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;*/ }
-  a:hover {
+.link {
+  color: #517bfc !important; }
+  .link:hover {
     color: #8728fe !important; }
-  a:visited {
+  .link:visited {
     color: #78909C !important; }
 
 /*Content Profile*/

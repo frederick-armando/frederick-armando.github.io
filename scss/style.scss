@@ -41,6 +41,12 @@ button.md-button.md-fab.md-theme-purple {
     }
 }
 
+i.md-icon.md-theme-purple.material-icons {
+    background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .md-button:hover:not([disabled]):not(.md-raised) {
     background-color: rgb(255, 255, 255);
 }
@@ -135,11 +141,8 @@ h2 {
     font-weight: 500;
 }
 
-a {
+.link {
     color: #517bfc !important;
-    /*background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;*/
     &:hover {
         color: #8728fe !important;
     }
