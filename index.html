@@ -16,7 +16,7 @@
 
 <body>
   <div id="main">
-	
+    
 	<md-toolbar>
         <img src="img/Logo_Full_White.svg" class="me-head"/>
         <md-tooltip md-direction="bottom">If you haven't try yet, click on the round button at your right ;)</md-tooltip>
@@ -46,7 +46,7 @@
 			<md-tooltip md-direction="left">French Translation</md-tooltip>
 		</md-button>
 	</md-speed-dial>
-	
+
 	<md-tabs md-centered>
 	  <md-tab md-label="Home" md-icon="home">
         <img src="img/Logo_Full.svg" id="logo" alt="Logo">
@@ -107,14 +107,13 @@
 		 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorum quas.</p>
 	  </md-tab>
 	</md-tabs>
-	
+
 </div>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.6/vue.min.js'></script>
 <script src='https://unpkg.com/vue-material@latest'></script>
 <script src="js/index.js"></script>
-
-    <script type="text/javascript">
+<script type="text/javascript">
         function getAge(dateString) {
             var today = new Date();
             var birthDate = new Date(dateString);
@@ -128,7 +127,29 @@
         }
 
         document.getElementById('monage').innerHTML = getAge("1995/04/04");
+</script>
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+        window.addEventListener("load", function () {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#edeff5",
+                        "text": "#838391"
+                    },
+                    "button": {
+                        "background": "transparent",
+                        "text": "#4b81e8",
+                        "border": "#4b81e8"
+                    }
+                },
+                "position": "bottom-right",
+                "content": {
+                    "message": "This website uses cookies to ensure you get the best experience"
+                }
+            })
+        });
     </script>
-
 </body>
 </html>
