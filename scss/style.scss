@@ -135,6 +135,16 @@ h2 {
     font-weight: 500;
 }
 
+a {
+    color: #517bfc !important;
+    /*background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+    &:hover {
+        color: #8728fe !important;
+    }
+}
+
 /*Content Profile*/
 .about__row {
     display: -webkit-box;
@@ -164,6 +174,7 @@ section.about__section {
     }
 
     &:last-child {
+        flex: 1;
         padding-right: 0;
     }
 }

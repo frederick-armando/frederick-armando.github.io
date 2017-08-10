@@ -95,6 +95,14 @@ h2 {
   font-family: Gilroy;
   font-weight: 500; }
 
+a {
+  color: #517bfc !important;
+  /*background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/ }
+  a:hover {
+    color: #8728fe !important; }
+
 /*Content Profile*/
 .about__row {
   display: -webkit-box;
@@ -120,6 +128,7 @@ section.about__section {
   section.about__section:first-child {
     flex: 1; }
   section.about__section:last-child {
+    flex: 1;
     padding-right: 0; }
 
 @media screen and (max-width: 1200px) {
