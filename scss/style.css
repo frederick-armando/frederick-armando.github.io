@@ -135,8 +135,10 @@ section.about__section {
   section.about__section:first-child {
     flex: 1; }
   section.about__section:last-child {
-    flex: 1;
-    padding-right: 0; }
+    flex: 1; }
+    @media screen and (min-width: 780px) {
+      section.about__section:last-child {
+        padding-right: 0; } }
 
 @media screen and (max-width: 1200px) {
   .about__row {

@@ -188,34 +188,34 @@ section.about__section {
 
     &:last-child {
         flex: 1;
-        padding-right: 0;
-    }
-}
-
-@media screen and (max-width: $break-large) {
-    .about__row {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
+            @media screen and (min-width: $break-medium) {
+                padding-right: 0;
+            }
+        }
     }
 
-    section.about__section {
-        padding: 15px;
+    @media screen and (max-width: $break-large) {
+        .about__row {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+
+        section.about__section {
+            padding: 15px;
+        }
     }
-}
 
-img#frederickarmando {
-    padding-top: 20px;
-}
-
-/*Ripple*/
-.md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header.md-active, .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header:focus, .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header {
-    color: rgba(0, 0, 0, 0.87) !important;
-}
-
-/*Select*/
-.md-theme-default :not(input):not(textarea)::selection{
-    background: #517bfc !important;
-}
+    img#frederickarmando {
+        padding-top: 20px;
+    }
+    /*Ripple*/
+    .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header.md-active, .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header:focus, .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header {
+        color: rgba(0, 0, 0, 0.87) !important;
+    }
+    /*Select*/
+    .md-theme-default :not(input):not(textarea)::selection {
+        background: #517bfc !important;
+    }
