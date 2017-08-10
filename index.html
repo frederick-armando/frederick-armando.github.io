@@ -33,6 +33,9 @@
     <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic'>
     <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
     <link rel='stylesheet prefetch' href='https://unpkg.com/vue-material@latest/dist/vue-material.css'>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf" />
 
     <link rel="stylesheet" href="scss/style.css">
   
@@ -42,19 +45,27 @@
   <div id="main">
     
 	<md-toolbar>
-        <img src="img/Logo_Full_White.svg" class="me-head"/>
-        <md-tooltip md-direction="bottom">If you haven't try yet, click on the round button at your right ;)</md-tooltip>
+	<div class="me-head">
+		<img class="me-logo"/>
+	</div>
+        <!--md-tooltip md-direction="bottom">If you haven't tryed yet, check the button at your right ;)</md-tooltip-->
         <!--md-tooltip md-direction="bottom">UI & UX Designer for Hire!</md-tooltip-->
-        <div>
-            <md-button class="md-icon-button md-raised md-dense">
-                <md-icon>add</md-icon>
+        <div class="me-social">	
+			<md-button class="md-icon-button md-raised md-dense" href="https://github.com/frederick-armando" target="_blank">
+                <md-icon md-iconset="fa fa-github" class="netbig"></md-icon>
+				<md-tooltip md-direction="bottom">Github</md-tooltip>
             </md-button>
-            <md-button class="md-icon-button md-raised md-dense">
-                <md-icon>add</md-icon>
+            <md-button class="md-icon-button md-raised md-dense" href="https://www.linkedin.com/in/frederickarmando/" target="_blank">
+                <md-icon md-iconset="fa fa-linkedin" class="netmid"></md-icon>
+				<md-tooltip md-direction="bottom">Linkedin</md-tooltip>
             </md-button>
-            <md-button class="md-icon-button md-raised md-dense">
-                <md-icon>add</md-icon>
+			<md-button class="md-icon-button md-raised md-dense" href="http://www.viadeo.com/p/0021338geljz1qcv" target="_blank">
+                <md-icon md-iconset="fa fa-viadeo" class="netbig"></md-icon>
+				<md-tooltip md-direction="bottom">Viadeo</md-tooltip>
             </md-button>
+			<!--md-button class="md-icon-button md-raised md-dense">
+                <md-icon md-src="icons/viadeo-logo.svg"></md-icon>
+            </md-button-->
             <!--<md-button class="me-head">Blog</md-button>
             <md-button class="me-head">Language</md-button>-->
         </div>
@@ -162,7 +173,7 @@
 </script>
 <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
 <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-<script>
+	<script>
         window.addEventListener("load", function () {
             window.cookieconsent.initialise({
                 "palette": {
