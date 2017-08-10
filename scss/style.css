@@ -10,7 +10,7 @@
 /*Toolbar*/
 .md-toolbar {
   background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
-  justify-content: space-between; }
+  justify-content: flex-start; }
   .md-toolbar img {
     height: 5vh !important;
     min-height: 62px;
@@ -18,6 +18,9 @@
   .md-toolbar .me-head {
     flex: 1 1 0%;
     max-width: 140px; }
+
+.md-button.md-icon-button.md-dense:first-child {
+  margin-left: 24px; }
 
 /*Speed-dial*/
 button.md-button.md-fab.md-theme-purple {

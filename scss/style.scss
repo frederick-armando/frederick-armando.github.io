@@ -16,7 +16,7 @@ $break-large: 1200px;
 /*Toolbar*/
 .md-toolbar {
     background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
-    justify-content: space-between;
+    justify-content: flex-start;
 
     img {
         height: 5vh !important;
@@ -27,6 +27,12 @@ $break-large: 1200px;
     .me-head {
         flex: 1 1 0%;
         max-width: 140px;
+    }
+}
+
+.md-button.md-icon-button.md-dense {
+    &:first-child{
+        margin-left: 24px;
     }
 }
 
