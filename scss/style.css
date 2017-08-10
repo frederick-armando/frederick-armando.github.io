@@ -88,11 +88,11 @@ button.md-button.md-fab.md-theme-purple {
   margin-right: 15px; }
 
 h1 {
-  font-family: Gilroy;
+  font-family: "Gilroy", Roboto, Arial, sans-serif;
   font-weight: bold; }
 
 h2 {
-  font-family: Gilroy;
+  font-family: "Gilroy", Roboto, Arial, sans-serif;
   font-weight: 500; }
 
 a {
@@ -102,6 +102,8 @@ a {
     -webkit-text-fill-color: transparent;*/ }
   a:hover {
     color: #8728fe !important; }
+  a:visited {
+    color: #78909C !important; }
 
 /*Content Profile*/
 .about__row {

@@ -126,12 +126,12 @@ button.md-button.md-fab.md-theme-purple {
 }
 
 h1 {
-    font-family: Gilroy;
+    font-family: "Gilroy", Roboto, Arial, sans-serif;
     font-weight: bold;
 }
 
 h2 {
-    font-family: Gilroy;
+    font-family: "Gilroy", Roboto, Arial, sans-serif;
     font-weight: 500;
 }
 
@@ -142,6 +142,10 @@ a {
     -webkit-text-fill-color: transparent;*/
     &:hover {
         color: #8728fe !important;
+    }
+
+    &:visited {
+        color: #78909C !important;
     }
 }
 
