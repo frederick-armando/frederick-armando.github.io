@@ -167,18 +167,21 @@ section.about__section {
       section.about__section:last-child {
         padding-right: 0; } }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 780px) {
   .about__row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column; }
+  .about__wrapper {
+    max-width: 90vw; }
   section.about__section {
     padding: 15px; } }
 
 img#frederickarmando {
-  padding-top: 20px; }
+  padding-top: 20px;
+  /*max-height: 350px;*/ }
 
 /*Ripple*/
 .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header.md-active, .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header:focus, .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header {

@@ -232,7 +232,7 @@ section.about__section {
         }
     }
 
-    @media screen and (max-width: $break-large) {
+    @media screen and (max-width: $break-medium) {
         .about__row {
             -webkit-box-orient: vertical;
             -webkit-box-direction: normal;
@@ -241,14 +241,19 @@ section.about__section {
             flex-direction: column;
         }
 
+        .about__wrapper {
+            max-width: 90vw;
+        }
+
         section.about__section {
             padding: 15px;
         }
     }
 
-    img#frederickarmando {
-        padding-top: 20px;
-    }
+img#frederickarmando {
+    padding-top: 20px;
+    /*max-height: 350px;*/
+}
     /*Ripple*/
     .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header.md-active, .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header:focus, .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header {
         color: rgba(0, 0, 0, 0.87) !important;
