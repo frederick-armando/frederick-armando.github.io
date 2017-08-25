@@ -7,6 +7,9 @@
   font-weight: bold;
   src: url("fonts/GilroyBold.otf") format("opentype"); }
 
+[v-cloak] {
+  display: none; }
+
 /*Toolbar*/
 .md-toolbar {
   background: -webkit-linear-gradient(left top, #517bfc, #8728fe);

@@ -13,6 +13,10 @@ $break-small: 420px;
 $break-medium: 780px;
 $break-large: 1200px;
 
+[v-cloak] {
+    display: none;
+}
+
 /*Toolbar*/
 .md-toolbar {
     background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
