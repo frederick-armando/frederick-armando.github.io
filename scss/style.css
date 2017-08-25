@@ -19,40 +19,32 @@
     flex: 1 1 0%;
     max-width: 140px; }
 
-.md-button.md-icon-button.md-dense:first-child {
-  margin-left: 24px; }
-  
+.md-button.md-icon-button.md-dense {
+  box-shadow: none; }
+  .md-button.md-icon-button.md-dense:first-child {
+    margin-left: 24px; }
+
 .netbig {
-    transform: scale(2);
-    margin-top: 14px; }
-	
+  transform: scale(2);
+  margin-top: 14px; }
+
 .netmid {
-    transform: scale(1.55);
-    margin-top: 12px;  }
-	
+  transform: scale(1.55);
+  margin-top: 12px; }
+
 @media screen and (max-width: 419px) {
   .me-logo {
-    content:url("../img/Logo_White.svg");
-  }
-	  
-	.me-social{
-		margin-left: -48px;
-	}
-	
-	.md-toolbar img {
-		max-width: 75px;
-	}
-}
+    content: url("../img/Logo_White.svg"); }
+  .me-social {
+    margin-left: -48px; }
+  .md-toolbar img {
+    max-width: 75px; } }
 
 @media screen and (min-width: 420px) {
-	.me-logo {
-		content:url("../img/Logo_Full_White.svg");
-	}
-	  
-	.me-social{
-		margin-left: 24px;
-	}
-}
+  .me-logo {
+    content: url("../img/Logo_Full_White.svg"); }
+  .me-social {
+    margin-left: 24px; } }
 
 /*Speed-dial*/
 button.md-button.md-fab.md-theme-purple {
@@ -121,10 +113,9 @@ i.md-icon.md-theme-purple.material-icons {
     margin-bottom: 0px;
     margin-right: 5px; } }
 
-.md-theme-default.md-tabs>.md-tabs-navigation .md-tab-header-navigation-button {
-    background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
-}	
-	
+.md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header-navigation-button {
+  background: -webkit-linear-gradient(left top, #517bfc, #8728fe); }
+
 /*Content Home*/
 #logo {
   max-height: 150px;

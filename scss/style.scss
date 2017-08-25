@@ -29,9 +29,9 @@ $break-large: 1200px;
         max-width: 140px;
     }
 }
-
 .md-button.md-icon-button.md-dense {
-    &:first-child{
+    box-shadow: none;
+    &:first-child {
         margin-left: 24px;
     }
 }
