@@ -69,6 +69,10 @@ i.md-icon.md-theme-purple.material-icons {
 .md-speed-dial [md-fab-trigger] ~ .md-button {
   transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 2); }
 
+.md-speed-dial.md-fab-bottom-right {
+  bottom: 96px;
+  position: fixed; }
+
 /*Tabs*/
 .md-tabs .md-tabs-navigation.md-has-icon.md-has-label {
   min-height: 72px;
