@@ -76,7 +76,7 @@ $break-large: 1200px;
 }
 
 /*Speed-dial*/
-button.md-button.md-fab.md-theme-purple {
+button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.md-clean.md-theme-purple {
     background: #ffffff;
 
     .md-icon {
@@ -84,12 +84,6 @@ button.md-button.md-fab.md-theme-purple {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-}
-
-i.md-icon.md-theme-purple.material-icons {
-    background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .md-button:hover:not([disabled]):not(.md-raised) {
