@@ -92,7 +92,7 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
   margin-bottom: 64px; }
 
 .md-tabs .md-tab-header {
-  width: 10vw;
+  width: 12vw;
   text-transform: initial; }
   .md-tabs .md-tab-header.md-active i, .md-tabs .md-tab-header.md-active span {
     background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
