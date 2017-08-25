@@ -20,7 +20,10 @@
     max-width: 140px; }
 
 .md-button.md-icon-button.md-dense {
-  box-shadow: none; }
+  box-shadow: none;
+  color: rgba(255, 255, 255, 0.5); }
+  .md-button.md-icon-button.md-dense:hover {
+    color: #ffffff; }
   .md-button.md-icon-button.md-dense:first-child {
     margin-left: 24px; }
 
@@ -36,9 +39,10 @@
   .me-logo {
     content: url("../img/Logo_White.svg"); }
   .me-social {
-    margin-left: -48px; }
+    margin-left: -72px; }
   .md-toolbar img {
-    max-width: 75px; } }
+    max-width: 75px;
+    margin-left: 4px; } }
 
 @media screen and (min-width: 420px) {
   .me-logo {
