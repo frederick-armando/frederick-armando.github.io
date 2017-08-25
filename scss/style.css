@@ -55,11 +55,13 @@
 
 /*Speed-dial*/
 button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.md-clean.md-theme-purple {
-  background: #ffffff; }
+  /*background: #ffffff;*/
+  background: -webkit-linear-gradient(left top, #517bfc, #8728fe); }
   button.md-button.md-fab.md-theme-purple .md-icon, a.md-button.md-fab.md-primary.md-mini.md-clean.md-theme-purple .md-icon {
-    background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
+    /*background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;*/
+    color: #ffffff; }
 
 .md-button:hover:not([disabled]):not(.md-raised) {
   background-color: white; }
@@ -142,6 +144,9 @@ h2 {
     color: #8728fe !important; }
   .link:visited {
     color: #78909C !important; }
+
+a.md-button.md-raised.md-primary.md-theme-default {
+  background: -webkit-linear-gradient(left top, #517bfc, #8728fe); }
 
 /*Content Profile*/
 .about__row {
