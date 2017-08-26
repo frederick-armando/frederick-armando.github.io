@@ -42,8 +42,16 @@
 </head>
 
 <body>
-  <div id="main" v-cloak>
+
+<div id="main" v-cloak>
     
+  <div v-if="loading" class="spinner">
+    <div class="double-bounce1"></div>
+    <div class="double-bounce2"></div>
+  </div>
+    
+  <div v-else>
+
 	<md-toolbar>
 	<div class="me-head">
 		<img class="me-logo"/>
@@ -102,6 +110,21 @@
             <md-button class="md-raised md-primary"  href="mailto:?to=frederickarmando@gmail.com &subject=Internship%202018"><!--disabled-->Intern for hire!</md-button>
             <md-tooltip md-direction="bottom">From February to August 2018</md-tooltip>
         </div>
+        <script type="text/javascript">
+            function getAge(dateString) {
+                var today = new Date();
+                var birthDate = new Date(dateString);
+                var age = today.getFullYear() - birthDate.getFullYear();
+                var m = today.getMonth() - birthDate.getMonth();
+                if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                    age--;
+                }
+                return age;
+                console.log('age: ' + getAge("1995/04/04"));
+            }
+
+            document.getElementById('monage').innerHTML = getAge("1995/04/04");
+        </script>
       </md-tab>
 
 	  <md-tab md-label="Profile" md-icon="account_circle">
@@ -142,26 +165,13 @@
 	  </md-tab>
 	</md-tabs>
 
+  </div>
+
 </div>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.6/vue.min.js'></script>
 <script src='https://unpkg.com/vue-material@latest'></script>
 <script src="js/index.js"></script>
-<script type="text/javascript">
-        function getAge(dateString) {
-            var today = new Date();
-            var birthDate = new Date(dateString);
-            var age = today.getFullYear() - birthDate.getFullYear();
-            var m = today.getMonth() - birthDate.getMonth();
-            if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-                age--;
-            }
-            return age;
-            console.log('age: ' + getAge("1995/04/04"));
-        }
-
-        document.getElementById('monage').innerHTML = getAge("1995/04/04");
-</script>
 <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
 <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
 	<script>
@@ -186,4 +196,5 @@
         });
     </script>
 </body>
+
 </html>

@@ -269,11 +269,63 @@ img#frederickarmando {
     padding-top: 20px;
     /*max-height: 350px;*/
 }
-    /*Ripple*/
-    .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header.md-active, .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header:focus, .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header {
-        color: rgba(0, 0, 0, 0.87) !important;
+/*Ripple*/
+.md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header.md-active, .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header:focus, .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header {
+    color: rgba(0, 0, 0, 0.87) !important;
+
+}
+
+/*Select*/
+.md-theme-default :not(input):not(textarea)::selection {
+    background: #517bfc !important;
+}
+
+/*Loader*/
+.spinner {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 100px auto;
+    margin-top: 33vh;
+}
+
+.double-bounce1, .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #333;
+    background: -webkit-linear-gradient(left top,#517bfc,#8728fe);
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+    0%, 100% {
+        -webkit-transform: scale(0.0)
     }
-    /*Select*/
-    .md-theme-default :not(input):not(textarea)::selection {
-        background: #517bfc !important;
+
+    50% {
+        -webkit-transform: scale(1.0)
     }
+}
+
+@keyframes sk-bounce {
+    0%, 100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    }
+
+    50% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}
