@@ -64,7 +64,7 @@ $break-large: 1200px;
 
     .md-toolbar img {
         max-width: 75px;
-        margin-left: 4px;
+        margin-left: 8px;
     }
 }
 
@@ -74,7 +74,8 @@ $break-large: 1200px;
 	}
 	  
 	.me-social{
-		margin-left: 24px;
+		/*margin-left: 24px;*/
+        margin-right: 8px;
 	}
 }
 
