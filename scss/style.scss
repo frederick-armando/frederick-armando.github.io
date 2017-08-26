@@ -280,6 +280,21 @@ img#frederickarmando {
     background: #517bfc !important;
 }
 
+/*Cookie*/
+.cc-bottom {
+    bottom: 5em !important;
+}
+
+.cc-right {
+    right: 0.5em !important;
+}
+
+@media screen and (max-width: 419px) {
+    .cc-revoke, .cc-window {
+        font-size: 14px !important;
+    }
+}
+
 /*Loader*/
 .spinner {
     width: 100px;
