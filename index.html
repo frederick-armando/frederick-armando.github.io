@@ -43,7 +43,7 @@
 
 <body>
   <div id="main" v-cloak>
-    
+
 	<md-toolbar>
 	<div class="me-head">
 		<img class="me-logo"/>
@@ -144,7 +144,7 @@
 </div>
 
 <div v-if="!$data">
-    Loading...
+    <i v-show="loading" class="fa fa-spinner fa-spin me-load"></i> Loading
 </div>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.6/vue.min.js'></script>
