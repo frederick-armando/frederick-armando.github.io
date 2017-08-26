@@ -94,6 +94,7 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
   margin-bottom: 64px; }
 
 .md-tabs .md-tab-header {
+  /*max-width: 150px;*/
   width: 12vw;
   text-transform: initial; }
   .md-tabs .md-tab-header.md-active i, .md-tabs .md-tab-header.md-active span {
@@ -185,10 +186,11 @@ section.about__section {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column; }
-  .about__wrapper {
-    max-width: 90vw; }
   section.about__section {
     padding: 15px; } }
+
+.about__wrapper {
+  max-width: 90vw; }
 
 img#frederickarmando {
   padding-top: 20px;

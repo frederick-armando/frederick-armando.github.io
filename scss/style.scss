@@ -131,6 +131,7 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
 }
 
 .md-tabs .md-tab-header {
+    /*max-width: 150px;*/
     width: 12vw;
     text-transform: initial;
 
@@ -255,14 +256,14 @@ section.about__section {
             flex-direction: column;
         }
 
-        .about__wrapper {
-            max-width: 90vw;
-        }
-
         section.about__section {
             padding: 15px;
         }
     }
+
+.about__wrapper {
+    max-width: 90vw;
+}
 
 img#frederickarmando {
     padding-top: 20px;
