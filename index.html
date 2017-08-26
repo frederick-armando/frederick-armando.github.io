@@ -42,7 +42,15 @@
 </head>
 
 <body>
-  <div id="main" v-cloak>
+
+<div id="main" v-cloak>
+    
+  <div v-if="loading" class="spinner">
+    <div class="double-bounce1"></div>
+    <div class="double-bounce2"></div>
+  </div>
+    
+  <div v-else>
 
 	<md-toolbar>
 	<div class="me-head">
@@ -141,10 +149,8 @@
 	  </md-tab>
 	</md-tabs>
 
-</div>
+  </div>
 
-<div v-if="!$data">
-    <i v-show="loading" class="fa fa-spinner fa-spin me-load"></i> Loading
 </div>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.6/vue.min.js'></script>
@@ -189,4 +195,5 @@
         });
     </script>
 </body>
+
 </html>
