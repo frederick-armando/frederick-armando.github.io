@@ -20,7 +20,7 @@ $break-large: 1200px;
 /*Toolbar*/
 .md-toolbar {
     background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
-    justify-content: space-between; /*flex-start*/
+    justify-content: space-between;
     img {
         height: 5vh !important;
         min-height: 62px;
@@ -74,20 +74,15 @@ $break-large: 1200px;
 	}
 	  
 	.me-social{
-		/*margin-left: 24px;*/
         margin-right: 8px;
 	}
 }
 
 /*Speed-dial*/
 button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.md-clean.md-theme-purple {
-    /*background: #ffffff;*/
-    background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
+    background: -webkit-linear-gradient(left top,rgba(81, 123, 252, 0.75),rgba(135, 40, 254, 0.75));
 
     .md-icon {
-        /*background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;*/
         color: #ffffff;
     }
 }
@@ -131,7 +126,6 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
 }
 
 .md-tabs .md-tab-header {
-    /*max-width: 150px;*/
     width: 12vw;
     text-transform: initial;
 
@@ -198,17 +192,42 @@ h2 {
 
 .link {
     color: #517bfc !important;
+    position: relative;
+    text-decoration: none !important;
+
     &:hover {
-        color: #8728fe !important;
+        color: #517bfc !important;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #517bfc;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+    }
+
+    &:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
     }
 
     &:visited {
-        color: #78909C !important;
+        color: #517bfc !important;
     }
 }
 
 a.md-button.md-raised.md-primary.md-theme-default {
     background: -webkit-linear-gradient(left top,#517bfc,#8728fe);
+    background: -webkit-linear-gradient(left top,rgba(81, 123, 252, 0.75),rgba(135, 40, 254, 0.75)) !important;
 }
 
 /*Content Profile*/
@@ -267,7 +286,6 @@ section.about__section {
 
 img#frederickarmando {
     padding-top: 20px;
-    /*max-height: 350px;*/
 }
 /*Ripple*/
 .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header.md-active, .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header:focus, .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header {
