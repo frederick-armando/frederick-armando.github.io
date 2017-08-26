@@ -13,7 +13,8 @@
 /*Toolbar*/
 .md-toolbar {
   background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
-  justify-content: flex-start; }
+  justify-content: space-between;
+  /*flex-start*/ }
   .md-toolbar img {
     height: 5vh !important;
     min-height: 62px;
