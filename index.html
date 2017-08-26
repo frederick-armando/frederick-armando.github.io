@@ -15,9 +15,9 @@
     <meta name="p:domain_verify" content="4ea1a2a9630675f40f1eb616d8ce5607" />
     
     <!--icones-->
-    <link rel="shortcut icon" href="img/logo-rm.png">
-    <link rel="image_src" href="img/FA_Square.png" />
-    <link rel="apple-touch-icon" href="img/FA_Square.png" />
+    <link rel="shortcut icon" href="img/Logo_Micro.png">
+    <link rel="image_src" href="img/Logo_Big.png" />
+    <link rel="apple-touch-icon" href="img/Logo_Big.png" />
 
     <meta property="og:image" content="http://frederickarmando.fr/img/FA_03-Fb_share1200px.png">
     <meta property="og:image:type" content="image/jpeg">
@@ -37,24 +37,27 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf" />
 
-    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="scss/style.min.css">
   
 </head>
 
 <body>
-  <div id="main">
+
+<div id="main" v-cloak>
     
+  <div v-if="loading" class="spinner">
+    <div class="double-bounce1"></div>
+    <div class="double-bounce2"></div>
+  </div>
+    
+  <div v-else>
+
 	<md-toolbar>
 	<div class="me-head">
 		<img class="me-logo"/>
 	</div>
-        <!--md-tooltip md-direction="bottom">If you haven't tryed yet, check the button at your right ;)</md-tooltip-->
-        <!--md-tooltip md-direction="bottom">UI & UX Designer for Hire!</md-tooltip-->
         <div class="me-social">	
-			<md-button class="md-icon-button md-raised md-dense" href="https://github.com/frederick-armando" target="_blank">
-                <md-icon md-iconset="fa fa-github" class="netbig"></md-icon>
-				<md-tooltip md-direction="bottom">Github</md-tooltip>
-            </md-button>
+			
             <md-button class="md-icon-button md-raised md-dense" href="https://www.linkedin.com/in/frederickarmando/" target="_blank">
                 <md-icon md-iconset="fa fa-linkedin" class="netmid"></md-icon>
 				<md-tooltip md-direction="bottom">Linkedin</md-tooltip>
@@ -63,15 +66,23 @@
                 <md-icon md-iconset="fa fa-viadeo" class="netbig"></md-icon>
 				<md-tooltip md-direction="bottom">Viadeo</md-tooltip>
             </md-button>
+            <md-button class="md-icon-button md-raised md-dense" href="https://www.behance.net/frederickarmando" target="_blank">
+                <md-icon md-iconset="fa fa-behance" class="netmid"></md-icon>
+                <md-tooltip md-direction="bottom">Behance</md-tooltip>
+            </md-button>
+            <md-button class="md-icon-button md-raised md-dense" href="https://github.com/frederick-armando" target="_blank">
+                <md-icon md-iconset="fa fa-github" class="netbig"></md-icon>
+                <md-tooltip md-direction="bottom">Github</md-tooltip>
+            </md-button>
 			<!--md-button class="md-icon-button md-raised md-dense">
                 <md-icon md-src="icons/viadeo-logo.svg"></md-icon>
-            </md-button-->
-            <!--<md-button class="me-head">Blog</md-button>
+            </md-button
+            <md-button class="me-head">Blog</md-button>
             <md-button class="me-head">Language</md-button>-->
         </div>
 	</md-toolbar>
 	
-	<md-speed-dial md-open="hover" md-direction="bottom" class="md-fab-top-right" md-theme="purple">
+	<md-speed-dial md-open="hover" md-direction="top" class="md-fab-bottom-right" md-theme="purple">
 		<md-button class="md-fab" md-fab-trigger>
 			<md-icon md-icon-morph>close</md-icon>
 		 	<md-icon>add</md-icon>
@@ -84,10 +95,10 @@
 			<md-icon>turned_in</md-icon>
 		 	<md-tooltip md-direction="left">UX & VR Blog</md-tooltip>
 		</md-button>
-		<md-button class="md-fab md-primary md-mini md-clean">
+		<!--<md-button class="md-fab md-primary md-mini md-clean">
 			<md-icon>language</md-icon>
 			<md-tooltip md-direction="left">French Translation</md-tooltip>
-		</md-button>
+		</md-button>-->
 	</md-speed-dial>
 
 	<md-tabs md-centered>
@@ -95,10 +106,25 @@
         <img src="img/Logo_Full.svg" id="logo" alt="Logo">
         <h2><span id="monage"></span> years old & <b>UX Designer</b></h2>
         <div>
-            <!--<md-button class="md-raised md-accent">Looking for an internship!</md-button>-->
-            <md-button class="md-raised md-primary" disabled>Intern for hire!</md-button>
-            <md-tooltip md-direction="bottom">From february to august 2018</md-tooltip>
+            <!--<md-button class="md-raised md-accent">Currently working at Keluro</md-button>-->
+            <md-button class="md-raised md-primary"  href="mailto:?to=frederickarmando@gmail.com &subject=Internship%202018"><!--disabled-->Intern for hire!</md-button>
+            <md-tooltip md-direction="bottom">From February to August 2018</md-tooltip>
         </div>
+        <script type="text/javascript">
+            function getAge(dateString) {
+                var today = new Date();
+                var birthDate = new Date(dateString);
+                var age = today.getFullYear() - birthDate.getFullYear();
+                var m = today.getMonth() - birthDate.getMonth();
+                if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                    age--;
+                }
+                return age;
+                console.log('age: ' + getAge("1995/04/04"));
+            }
+
+            document.getElementById('monage').innerHTML = getAge("1995/04/04");
+        </script>
       </md-tab>
 
 	  <md-tab md-label="Profile" md-icon="account_circle">
@@ -122,18 +148,6 @@
                     <p>I am currently in my final year of Master's degree in <b>User Experience</b> and <b>User Interface Design </b> at Créteil University’s Faculty of Communication (UFR Paris 13).</p> 
                     <p>This follow a Bachelor’s Degree of <b>WebDesign</b> in Belfort University and a two years University Degree in Technology, <b>Web and Multimedia Technologies</b> in Toulon, </p>
                 </section>
-                <!--section class="about__section">
-                    <h2 class="about__title">UX Design</h2>
-                    <p>If you can think it, I will create it. I deliver very organized, scalable and highly optimized code which can be later maintained with ease.</p>
-                    <p>My strongest experience is in modern component based front-end and back-end engineering with Python and Django.</p>
-                    <p>You can find out more about my workflow in my <a href="./articles/enboard/">latest case study</a>.</p>
-                </section-->
-                <!--section class="about__section">
-                    <h2 class="about__title">Available for Work</h2>
-                    <p>If you need help with your project(s) and you want it done properly - then I'm your guy.</p>
-                    <p>You can contact me through
-                    <script>document.write(unescape("%3c%61%20%68%72%65%66%3d%22%6d%61%69%6c%74%6f%3a%64%6f%6d%69%6e%69%6b%64%73%67%6e%72%40%67%6d%61%69%6c%2e%63%6f%6d%22%3e%64%6f%6d%69%6e%69%6b%64%73%67%6e%72%40%67%6d%61%69%6c%2e%63%6f%6d%3c%2f%61%3e"));</script><a href="mailto:xd@gmail.com">xd@gmail.com</a><noscript>&amp;amp;mdash; you need to have javascript enabled to see this email &amp;amp;mdash; </noscript> or using the social networks listed in the header.</p>
-                </section-->
             </div>
         </div>
       </md-tab>
@@ -151,26 +165,13 @@
 	  </md-tab>
 	</md-tabs>
 
+  </div>
+
 </div>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.6/vue.min.js'></script>
 <script src='https://unpkg.com/vue-material@latest'></script>
 <script src="js/index.js"></script>
-<script type="text/javascript">
-        function getAge(dateString) {
-            var today = new Date();
-            var birthDate = new Date(dateString);
-            var age = today.getFullYear() - birthDate.getFullYear();
-            var m = today.getMonth() - birthDate.getMonth();
-            if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-                age--;
-            }
-            return age;
-            console.log('age: ' + getAge("1995/04/04"));
-        }
-
-        document.getElementById('monage').innerHTML = getAge("1995/04/04");
-</script>
 <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
 <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
 	<script>
@@ -195,4 +196,5 @@
         });
     </script>
 </body>
+
 </html>
