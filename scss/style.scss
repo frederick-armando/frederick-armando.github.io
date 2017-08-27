@@ -287,6 +287,23 @@ section.about__section {
 img#frederickarmando {
     padding-top: 20px;
 }
+
+/*Content Project*/
+#iframe1 {
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: -1px;
+    width: 100%;
+    height: calc(100vh - 135px) !important;
+    width: 100vw;
+}
+
+.slideshow .slick-dots li button:before {
+    height: 5px !important;
+    border-radius: 5px !important;
+}
+
 /*Ripple*/
 .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header.md-active, .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header:focus, .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header {
     color: rgba(0, 0, 0, 0.87) !important;
