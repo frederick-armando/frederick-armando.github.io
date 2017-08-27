@@ -298,22 +298,7 @@ img#frederickarmando {
     background: #517bfc !important;
 }
 
-/*Cookie
-.cc-bottom {
-    bottom: 5em !important;
-}
-
-@media screen and (min-width: 420px) {
-    .cc-right {
-        right: 0.5em !important;
-    }
-}
-
-@media screen and (max-width: 419px) {
-    .cc-revoke, .cc-window {
-        font-size: 14px !important;
-    }
-}*/
+/*Cookie*/
 .cc-floating.cc-theme-classic {
     text-align: center;
     font-size: 0.95rem;
@@ -331,6 +316,9 @@ a.cc-btn.cc-dismiss {
     font-size: 0.85rem;
     min-width: 64px !important;
     max-width: 96px !important;
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 /*Loader*/
