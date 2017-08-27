@@ -143,12 +143,13 @@ html {
     margin-left: 24px !important;
     text-align: start;
 
-    @media screen and (min-width: 720px) {
+    @media screen and (min-width: 780px) {
         margin-top: -24px !important;
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 780px) {
         font-size: 24px;
+        font-family: "GilroyBold",Roboto,Arial,sans-serif;
     }
 }
 

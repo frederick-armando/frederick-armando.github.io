@@ -111,12 +111,13 @@ html {
   padding: 0 !important;
   margin-left: 24px !important;
   text-align: start; }
-  @media screen and (min-width: 720px) {
+  @media screen and (min-width: 780px) {
     .slideshow-text {
       margin-top: -24px !important; } }
-  @media (max-width: 767px) {
+  @media (max-width: 780px) {
     .slideshow-text {
-      font-size: 24px; } }
+      font-size: 24px;
+      font-family: "GilroyBold",Roboto,Arial,sans-serif; } }
 
 p {
   background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
