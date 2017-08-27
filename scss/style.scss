@@ -126,7 +126,9 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
 }
 
 .md-tabs .md-tab-header {
-    width: 12vw;
+    width: 20vw; /*12vw*/
+    min-width: unset;
+    max-width: 185px; /*unset*/
     text-transform: initial;
 
     &.md-active {
