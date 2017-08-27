@@ -203,10 +203,14 @@ img#frederickarmando {
   height: 100%;
   left: 0px;
   position: absolute;
-  top: 0px;
+  top: -1px;
   width: 100%;
-  height: calc(100vh - 136px) !important;
+  height: calc(100vh - 135px) !important;
   width: 100vw; }
+
+.slideshow .slick-dots li button:before {
+  height: 5px !important;
+  border-radius: 5px !important; }
 
 /*Ripple*/
 .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header.md-active, .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header:focus, .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header {
