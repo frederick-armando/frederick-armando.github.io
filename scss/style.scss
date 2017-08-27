@@ -303,8 +303,10 @@ img#frederickarmando {
     bottom: 5em !important;
 }
 
-.cc-right {
-    right: 0.5em !important;
+@media screen and (min-width: 420px) {
+    .cc-right {
+        right: 0.5em !important;
+    }
 }
 
 @media screen and (max-width: 419px) {
