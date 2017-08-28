@@ -143,10 +143,15 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
 h1 {
   font-family: "Gilroy", Roboto, Arial, sans-serif;
   font-weight: bold; }
+  @media screen and (max-width: 420px) {
+    h1 {
+      text-align: center; } }
 
 h2 {
   font-family: "Gilroy", Roboto, Arial, sans-serif;
   font-weight: 500; }
+  h2.me-intro {
+    text-align: center; }
 
 .link {
   color: #517bfc !important;
@@ -217,7 +222,8 @@ section.about__section {
     -ms-flex-direction: column;
     flex-direction: column; }
   section.about__section {
-    padding: 15px; } }
+    padding: 15px;
+    margin-top: -20px; } }
 
 .about__wrapper {
   max-width: 90vw; }

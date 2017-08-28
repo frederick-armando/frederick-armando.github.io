@@ -197,11 +197,18 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
 h1 {
     font-family: "Gilroy", Roboto, Arial, sans-serif;
     font-weight: bold;
+
+    @media screen and (max-width: $break-small) {
+        text-align: center;
+    }
 }
 
 h2 {
     font-family: "Gilroy", Roboto, Arial, sans-serif;
     font-weight: 500;
+    &.me-intro{
+        text-align: center;
+    }
 }
 
 .link {
@@ -292,6 +299,7 @@ section.about__section {
 
         section.about__section {
             padding: 15px;
+            margin-top: -20px;
         }
     }
 
