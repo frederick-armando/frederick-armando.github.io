@@ -157,6 +157,9 @@ h2 {
   h2.me-intro {
     text-align: center; }
 
+p {
+  font-family: "Gilroy", Roboto, Arial, sans-serif; }
+
 .link {
   color: #517bfc !important;
   position: relative;
