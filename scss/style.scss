@@ -21,6 +21,11 @@ $break-large: 1200px;
 .md-toolbar {
     background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
     justify-content: space-between;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        width: 100vw;
+
     img {
         height: 5vh !important;
         min-height: 62px;
