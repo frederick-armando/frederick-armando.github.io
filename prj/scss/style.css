@@ -106,7 +106,7 @@ html {
   z-index: 99;
   height: unset;
   bottom: auto;
-  top: 0;
+  top: -8px;
   margin: 0 !important;
   padding: 0 !important;
   margin-left: 24px !important;
@@ -116,8 +116,13 @@ html {
       margin-top: -24px !important; } }
   @media (max-width: 780px) {
     .slideshow-text {
-      font-size: 24px;
+      top: 2px;
+      font-size: 22px;
       font-family: "GilroyBold",Roboto,Arial,sans-serif; } }
+  @media (max-width: 320px) {
+    .slideshow-text {
+      top: 8px;
+      font-size: 18px; } }
 
 p {
   background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
@@ -125,10 +130,8 @@ p {
   -webkit-text-fill-color: transparent; }
 
 @media screen and (max-width: 720px) {
-  img {
-    filter: blur(5px); } }
-
-/*.slick-vertical .slick-slide {
-    background: rgba(255, 255, 255, 0.75);
-}*/
+  .slideshow .slider .item img {
+    top: 20%;
+    left: 22.5%;
+    transform: translate(-25%, -25%); } }
 
