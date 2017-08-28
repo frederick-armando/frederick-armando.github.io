@@ -6,5 +6,9 @@
   {
     "outputFile": "prj/scss/style.css",
     "inputFile": "prj/scss/style.scss"
+  },
+  {
+    "outputFile": "skl/scss/style.css",
+    "inputFile": "skl/scss/style.scss"
   }
 ]
