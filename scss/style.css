@@ -95,15 +95,25 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
   min-width: unset;
   max-width: 185px;
   /*unset*/
-  text-transform: initial; }
+  text-transform: initial;
+  font-family: "Gilroy",Roboto,Arial,sans-serif; }
   .md-tabs .md-tab-header.md-active i, .md-tabs .md-tab-header.md-active span {
     background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
   .md-tabs .md-tab-header.md-active span {
-    font-weight: 800; }
-  .md-tabs .md-tab-header i, .md-tabs .md-tab-header span {
+    font-family: "Gilroy",Roboto,Arial,sans-serif; }
+  .md-tabs .md-tab-header i {
     color: rgba(0, 0, 0, 0.42); }
+  .md-tabs .md-tab-header span {
+    color: #949494;
+    /*#666*/
+    font-weight: bold;
+    letter-spacing: 2px; }
+    @media screen and (max-width: 420px) {
+      .md-tabs .md-tab-header span {
+        font-weight: 200;
+        letter-spacing: 0px; } }
 
 .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-indicator {
   background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
@@ -166,7 +176,8 @@ h2 {
 
 a.md-button.md-raised.md-primary.md-theme-default {
   background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
-  background: -webkit-linear-gradient(left top, rgba(81, 123, 252, 0.75), rgba(135, 40, 254, 0.75)) !important; }
+  background: -webkit-linear-gradient(left top, rgba(81, 123, 252, 0.75), rgba(135, 40, 254, 0.75)) !important;
+  font-family: "Gilroy",Roboto,Arial,sans-serif; }
 
 /*Content Profile*/
 .about__row {
