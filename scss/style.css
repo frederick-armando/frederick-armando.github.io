@@ -13,7 +13,11 @@
 /*Toolbar*/
 .md-toolbar {
   background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
-  justify-content: space-between; }
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  width: 100vw; }
   .md-toolbar img {
     height: 5vh !important;
     min-height: 62px;
@@ -40,7 +44,7 @@
 
 @media screen and (max-width: 419px) {
   .me-logo {
-    content: url("../img/Logo_White.svg"); }
+    content: url("../img/Logo_White_compressed.svg"); }
   .me-social {
     margin-left: -72px; }
   .md-toolbar img {
@@ -102,7 +106,8 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
   .md-tabs .md-tab-header.md-active span {
-    font-family: "Gilroy",Roboto,Arial,sans-serif; }
+    font-family: "Gilroy",Roboto,Arial,sans-serif;
+    font-weight: bold; }
   .md-tabs .md-tab-header i {
     color: rgba(0, 0, 0, 0.42); }
   .md-tabs .md-tab-header span {
@@ -152,6 +157,9 @@ h2 {
   font-weight: 500; }
   h2.me-intro {
     text-align: center; }
+
+p {
+  font-family: "Gilroy", Roboto, Arial, sans-serif; }
 
 .link {
   color: #517bfc !important;
@@ -223,13 +231,49 @@ section.about__section {
     flex-direction: column; }
   section.about__section {
     padding: 15px;
-    margin-top: -20px; } }
+    margin-top: -10px; }
+    section.about__section:first-child {
+      margin-top: -20px; }
+    section.about__section:last-child {
+      margin-top: -50px; }
+  .layout__dynamic-title-wrapper {
+    margin-top: 1.5em; } }
 
 .about__wrapper {
   max-width: 90vw; }
 
 img#frederickarmando {
   padding-top: 25px; }
+
+.me-arrow {
+  display: none; }
+  @media screen and (max-width: 780px) {
+    .me-arrow {
+      width: 82vw;
+      justify-content: center;
+      margin-top: 0.5em;
+      font-size: 2.5rem;
+      background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
+      -webkit-background-clip: text;
+      /*-webkit-text-fill-color: transparent;*/
+      display: none;
+      /*flex*/ }
+      .me-arrow a {
+        margin-left: 0 !important; }
+        .me-arrow a i {
+          color: #517bfc;
+          width: 42px;
+          height: 42px;
+          font-size: 42px; } }
+
+.me-mid {
+  width: 42vw !important; }
+
+.me-before {
+  display: inline-flex; }
+
+.me-down {
+  font-size: 42px; }
 
 /*Content Project*/
 #iframe1 {

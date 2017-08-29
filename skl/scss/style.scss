@@ -1,0 +1,337 @@
+@font-face {
+    font-family: Gilroy;
+    src: url("../../fonts/Gilroy.otf") format("opentype");
+}
+
+@font-face {
+    font-family: GilroyBold;
+    font-weight: bold;
+    src: url("../../fonts/GilroyBold.otf") format("opentype");
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	-webkit-tap-highlight-color: transparent;
+}
+body {
+    font-family: "Gilroy",Roboto,Arial,sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5em;
+    color: #363c42;
+    background: #fff;
+    counter-reset: section;
+}
+
+h1 {
+    font-family: "GilroyBold", Roboto, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 32px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 960px) {
+        display: none;
+    }
+
+    @media screen and (max-width: 780px) {
+        text-align: center;
+        margin-top: -32px;
+    }
+
+    @media screen and (max-width: 580px) {
+        margin-top: 32px;
+    }
+}
+
+p {
+	margin-top: 2rem;
+	margin-bottom: 0.5rem;
+    font-size: 14px;
+}
+
+svg {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+
+    @media all and (max-width: 780px) {
+        display: none;
+    }
+}
+
+
+/*  FRAME  */
+	.frame div {
+		background: #fff;
+		position: fixed;
+		z-index: 9999;
+	}
+	.frame .top {
+		width: 100%;
+		height: 1em;
+		top: 0;
+		left: 0;
+	}
+	.frame .right {
+		width: 1em;
+		height: 100%;
+		top: 0;
+		right: 0;
+	}
+	.frame .bottom {
+		width: 100%;
+		height: 1em;
+		bottom: 0;
+		left: 0;
+	}
+	.frame .left {
+		width: 1em;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+	@media all and (min-width: 640px) {
+		.frame .top {
+			height: 2em;
+		}
+		.frame .right {
+			width: 2em;
+		}
+		.frame .bottom {
+			height: 2em;
+		}
+		.frame .left {
+			width: 2em;
+		}
+	}
+
+
+/*  SECTIONS  */
+	.section {
+		color: rgba(0, 0, 0, 0.87);
+		padding: 0em;
+		background: #fff;
+	}
+	@media all and (min-width: 640px) {
+		.section {
+			padding: 4em 0em;
+		}
+	}
+	@media all and (min-width: 960px) {
+        .section {
+            padding: 2.5em 8em;
+            max-height: 100vh;
+        }
+	}
+
+
+/*  SPLIT VISION  */
+	.split-vision {
+		overflow: hidden;
+	}
+	.split-vision .column .content {
+		max-width: 540px;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		margin-right: auto;
+		margin-left: auto;
+		position: relative;
+		z-index: 2;
+	}
+
+	@media all and (min-width: 800px) {
+		.split-vision {
+			display: flex;
+			align-items: center;
+		}
+		.split-vision .column {
+			width: 50%;
+		}
+		.split-vision .column .content {
+			padding-right: 1em;
+			padding-left: 20%;
+			margin-right: -10%;
+		}
+	}
+
+	@media all and (min-width: 960px) {
+		.split-vision .column .content {
+			margin-right: 0;
+		}
+		.split-vision.reverse .column .content {
+			margin-left: 0;
+		}
+	}
+
+
+/*  PROCESS  */
+	.process {
+		width: 100%;
+		max-width: none;
+	}
+	.process .discover,
+	.process .design,
+	.process .implement,
+	.process .develop,
+	.process .deliver {
+		opacity: 0.8;
+		transform: scaleY(0);
+		transform-origin: 50% 100%;
+		transition: opacity 0.25s;
+	}
+	.process.js-animate .discover,
+	.process.js-animate .design,
+	.process.js-animate .implement,
+	.process.js-animate .develop,
+	.process.js-animate .deliver {
+		animation: grow-up 1s forwards;
+	}
+	.process.js-animate .discover {
+		animation-delay: 0.25s;
+	}
+	.process.js-animate .design {
+		animation-delay: 0.5s;
+	}
+	.process.js-animate .implement {
+		animation-delay: 0.75s;
+	}
+	.process.js-animate .develop {
+		animation-delay: 1s;
+	}
+	.process.js-animate .deliver {
+		animation-delay: 1.25s;
+	}
+
+	@keyframes grow-up {
+		0% {
+			transform: scaleY(0);
+		}
+		50% {
+			transform: scaleY(1.1);
+		}
+		80%,
+		100% {
+			transform: scaleY(1);
+		}
+	}
+
+	.process-details {
+		max-width: 1440px;
+		padding: 2em;
+		margin-right: auto;
+		margin-left: auto;
+        @media all and (max-width: 640px) {
+			padding: 1em;
+            padding-top: 1.5em;
+            padding-bottom: 0;
+	    }
+	}
+	.process-details .discover,
+	.process-details .design,
+	.process-details .implement,
+	.process-details .develop,
+	.process-details .deliver {
+		max-width: 480px;
+		padding: 1em 0;
+		margin-right: auto;
+		margin-left: auto;
+		transition: opacity 0.25s;
+        @media all and (max-width: 640px) {
+			padding: 0.25em 1em;
+            max-width: unset;
+	    }
+	}
+
+	.process-details .discover .heading,
+	.process-details .design .heading,
+	.process-details .implement .heading,
+	.process-details .develop .heading,
+	.process-details .deliver .heading {
+        font-size: 21px;
+	}
+	.process-details .discover .heading::after,
+	.process-details .design .heading::after,
+	.process-details .implement .heading::after,
+	.process-details .develop .heading::after,
+	.process-details .deliver .heading::after {
+		width: 40px;
+		height: 4px;
+		margin-top: 0.25em;
+		display: block;
+		content: '';
+	}
+	.process-details .discover .heading::after {
+		background: #50b1aa;
+	}
+	.process-details .design .heading::after {
+		background: #f57a73;
+	}
+	.process-details .implement .heading::after {
+		background: #ffb566;
+	}
+	.process-details .develop .heading::after {
+		background: #43c0e6;
+	}
+	.process-details .deliver .heading::after {
+		background: #60666a;
+	}
+
+	@media all and (min-width: 800px) {
+		.process-details {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.process-details .discover,
+		.process-details .design,
+		.process-details .implement,
+		.process-details .develop,
+		.process-details .deliver {
+			width: 50%;
+			padding-right: 1em;
+			padding-left: 1em;
+		}
+
+		.process-details .discover {
+			order: 1;
+		}
+		.process-details .design {
+			margin-right: 0;
+			order: 4;
+		}
+		.process-details .implement {
+			order: 2;
+		}
+		.process-details .develop {
+			margin-left: 0;
+			order: 5;
+		}
+		.process-details .deliver {
+			order: 3;
+		}
+	}
+	@media all and (min-width: 800px) {
+		.process-details .discover,
+		.process-details .design,
+		.process-details .implement,
+		.process-details .develop,
+		.process-details .deliver {
+			width: 33.3334%;
+		}
+	}
+	@media all and (min-width: 1280px) {
+		.process-details .discover,
+		.process-details .design,
+		.process-details .implement,
+		.process-details .develop,
+		.process-details .deliver {
+			padding-right: 2em;
+			padding-left: 2em;
+		}
+	}
