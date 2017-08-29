@@ -253,13 +253,19 @@ img#frederickarmando {
       .me-arrow a {
         margin-left: 0 !important; }
         .me-arrow a i {
-          color: #517bfc; } }
+          color: #517bfc;
+          width: 42px;
+          height: 42px;
+          font-size: 42px; } }
 
 .me-mid {
   width: 42vw !important; }
 
 .me-before {
   display: inline-flex; }
+
+.me-down {
+  font-size: 42px; }
 
 /*Content Project*/
 #iframe1 {

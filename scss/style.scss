@@ -322,6 +322,7 @@ img#frederickarmando {
 
 .me-arrow {
     display: none;
+
     @media screen and (max-width: $break-medium) {
         width: 82vw;
         justify-content: center;
@@ -331,10 +332,15 @@ img#frederickarmando {
         -webkit-background-clip: text;
         /*-webkit-text-fill-color: transparent;*/
         display: flex;
-        a{
+
+        a {
             margin-left: 0 !important;
-            i{
+
+            i {
                 color: #517bfc;
+                width: 42px;
+                height: 42px;
+                font-size: 42px;
             }
         }
     }
@@ -346,6 +352,10 @@ img#frederickarmando {
 
 .me-before {
     display: inline-flex;
+}
+
+.me-down{
+    font-size: 42px;
 }
 
 /*Content Project*/
