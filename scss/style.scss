@@ -146,6 +146,7 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
 
         span {
             font-family: "Gilroy",Roboto,Arial,sans-serif;
+            font-weight: bold;
         }
     }
 
@@ -308,7 +309,15 @@ section.about__section {
 
         section.about__section {
             padding: 15px;
-            margin-top: -20px;
+            margin-top: -10px;
+
+            &:first-child {
+                margin-top: -20px;
+            }
+
+            &:last-child {
+                margin-top: -50px;
+            }
         }
 
         .layout__dynamic-title-wrapper {
@@ -335,7 +344,7 @@ img#frederickarmando {
         background: -webkit-linear-gradient(left top,#517bfc,#8728fe);
         -webkit-background-clip: text;
         /*-webkit-text-fill-color: transparent;*/
-        display: flex;
+        display: none; /*flex*/
 
         a {
             margin-left: 0 !important;

@@ -1,3 +1,14 @@
+@font-face {
+    font-family: Gilroy;
+    src: url("../../fonts/Gilroy.otf") format("opentype");
+}
+
+@font-face {
+    font-family: GilroyBold;
+    font-weight: bold;
+    src: url("../../fonts/GilroyBold.otf") format("opentype");
+}
+
 *,
 *::before,
 *::after {
@@ -9,25 +20,35 @@ html {
 	-webkit-tap-highlight-color: transparent;
 }
 body {
-	font-family: Lato, sans-serif;
-	font-size: 1.6rem;
-	line-height: 1.5em;
-	color: #363c42;
-	background: #fff;
-
-	counter-reset: section;
+    font-family: "Gilroy",Roboto,Arial,sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5em;
+    color: #363c42;
+    background: #fff;
+    counter-reset: section;
 }
 
 h1 {
-	font-family: Georgia, Times, 'Times New Roman', serif;
-	font-size: 6rem;
-	line-height: 1.333em;
-	font-weight: 700;
-	font-style: italic;
-	letter-spacing: 0.08rem;
-	margin-top: 2.4rem;
-	margin-bottom: 2.4rem;
+    font-family: "GilroyBold", Roboto, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 32px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 960px) {
+        display: none;
+    }
+
+    @media screen and (max-width: 640px) {
+        text-align: center;
+        margin-top: -32px;
+    }
+
+    @media screen and (max-width: 360px) {
+        margin-top: 32px;
+    }
 }
+
 h1.numbered {
 	font-size: 2.4rem;
 }
@@ -42,14 +63,12 @@ h1.numbered::before {
 	content: '0' counter(section);
 }
 p {
-	margin-top: 2.4rem;
-	margin-bottom: 2.4rem;
+	margin-top: 2rem;
+	margin-bottom: 0.5rem;
     font-size: 14px;
 }
 @media (min-width: 960px) {
-	h1 {
-		font-size: 9rem;
-	}
+	
 	h1.numbered {
 		font-size: 3.6rem;
 	}
@@ -123,12 +142,12 @@ svg {
 	}
 	@media all and (min-width: 640px) {
 		.section {
-			padding: 4em;
+			padding: 4em 0em;
 		}
 	}
 	@media all and (min-width: 960px) {
         .section {
-            padding: 8em;
+            padding: 2.5em 8em;
             max-height: 100vh;
         }
 	}
@@ -231,7 +250,7 @@ svg {
 		margin-left: auto;
         @media all and (max-width: 640px) {
 			padding: 1em;
-            padding-top: 2.75em;
+            padding-top: 1.5em;
             padding-bottom: 0;
 	    }
 	}
@@ -246,22 +265,17 @@ svg {
 		margin-left: auto;
 		transition: opacity 0.25s;
         @media all and (max-width: 640px) {
-			padding: 0.25em 0.5em;
+			padding: 0.25em 1em;
+            max-width: unset;
 	    }
 	}
-
-    .process-details .discover {
-        @media all and (max-width: 640px) {
-            padding-top: 0.5em;
-        }
-    }
 
 	.process-details .discover .heading,
 	.process-details .design .heading,
 	.process-details .implement .heading,
 	.process-details .develop .heading,
 	.process-details .deliver .heading {
-		font-weight: 700;
+        font-size: 21px;
 	}
 	.process-details .discover .heading::after,
 	.process-details .design .heading::after,
