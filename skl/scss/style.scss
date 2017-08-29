@@ -39,42 +39,20 @@ h1 {
         display: none;
     }
 
-    @media screen and (max-width: 640px) {
+    @media screen and (max-width: 780px) {
         text-align: center;
         margin-top: -32px;
     }
 
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: 580px) {
         margin-top: 32px;
     }
 }
 
-h1.numbered {
-	font-size: 2.4rem;
-}
-h1.numbered::before {
-	font-size: 6rem;
-	line-height: 1em;
-	margin-top: -0.3em;
-	display: block;
-	opacity: 0.25;
-
-	counter-increment: section;
-	content: '0' counter(section);
-}
 p {
 	margin-top: 2rem;
 	margin-bottom: 0.5rem;
     font-size: 14px;
-}
-@media (min-width: 960px) {
-	
-	h1.numbered {
-		font-size: 3.6rem;
-	}
-	h1.numbered::before {
-		font-size: 9rem;
-	}
 }
 
 svg {
@@ -82,7 +60,7 @@ svg {
     height: auto;
     vertical-align: middle;
 
-    @media all and (max-width: 640px) {
+    @media all and (max-width: 780px) {
         display: none;
     }
 }
