@@ -231,6 +231,8 @@ svg {
 		margin-left: auto;
         @media all and (max-width: 640px) {
 			padding: 1em;
+            padding-top: 2.75em;
+            padding-bottom: 0;
 	    }
 	}
 	.process-details .discover,
