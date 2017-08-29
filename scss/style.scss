@@ -60,7 +60,7 @@ $break-large: 1200px;
 
 @media screen and (max-width: 419px) {
   .me-logo {
-    content:url("../img/Logo_White.svg");
+    content:url("../img/Logo_White_compressed.svg");
   }
 	  
 	.me-social{
@@ -318,6 +318,34 @@ section.about__section {
 
 img#frederickarmando {
     padding-top: 25px;
+}
+
+.me-arrow {
+    display: none;
+    @media screen and (max-width: $break-medium) {
+        width: 82vw;
+        justify-content: center;
+        margin-top: 0.5em;
+        font-size: 2.5rem;
+        background: -webkit-linear-gradient(left top,#517bfc,#8728fe);
+        -webkit-background-clip: text;
+        /*-webkit-text-fill-color: transparent;*/
+        display: flex;
+        a{
+            margin-left: 0 !important;
+            i{
+                color: #517bfc;
+            }
+        }
+    }
+}
+
+.me-mid {
+    width: 42vw !important;
+}
+
+.me-before {
+    display: inline-flex;
 }
 
 /*Content Project*/
