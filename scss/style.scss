@@ -1,12 +1,12 @@
 ﻿@font-face {
     font-family: Gilroy;
-    src: url("fonts/Gilroy.otf") format("opentype");
+    src: url("../fonts/Gilroy.otf") format("opentype");
 }
 
 @font-face {
     font-family: GilroyBold;
     font-weight: bold;
-    src: url("fonts/GilroyBold.otf") format("opentype");
+    src: url("../fonts/GilroyBold.otf") format("opentype");
 }
 
 $break-small: 420px;
@@ -135,7 +135,7 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
     min-width: unset;
     max-width: 185px; /*unset*/
     text-transform: initial;
-    font-family: "Gilroy",Roboto,Arial,sans-serif;
+    font-family: "GilroyBold",Roboto,Arial,sans-serif;
 
     &.md-active {
         i, span {
@@ -145,7 +145,7 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
         }
 
         span {
-            font-family: "Gilroy",Roboto,Arial,sans-serif;
+            font-family: "GilroyBold",Roboto,Arial,sans-serif;
             font-weight: bold;
         }
     }
@@ -201,7 +201,7 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
 }
 
 h1 {
-    font-family: "Gilroy", Roboto, Arial, sans-serif;
+    font-family: "GilroyBold", Roboto, Arial, sans-serif;
     font-weight: bold;
 
     @media screen and (max-width: $break-small) {
@@ -219,6 +219,10 @@ h2 {
 
 p {
     font-family: "Gilroy", Roboto, Arial, sans-serif;
+}
+
+b {
+    font-family: "GilroyBold", Roboto, Arial, sans-serif;
 }
 
 .link {
