@@ -17,6 +17,10 @@ $break-large: 1200px;
     display: none;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /*Toolbar*/
 .md-toolbar {
     background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
