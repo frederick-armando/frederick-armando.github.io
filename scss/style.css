@@ -31,19 +31,12 @@ body {
 
 .md-button.md-icon-button.md-dense {
   box-shadow: none;
-  color: rgba(255, 255, 255, 0.5); }
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 4px; }
   .md-button.md-icon-button.md-dense:hover {
     color: #ffffff; }
   .md-button.md-icon-button.md-dense:first-child {
     margin-left: 24px; }
-
-.netbig {
-  transform: scale(2);
-  margin-top: 14px; }
-
-.netmid {
-  transform: scale(1.55);
-  margin-top: 12px; }
 
 @media screen and (max-width: 419px) {
   .me-logo {
@@ -59,6 +52,19 @@ body {
     content: url("../img/Logo_Full_White.svg"); }
   .me-social {
     margin-right: 8px; } }
+
+.md-button {
+  color: rgba(255, 255, 255, 0.5); }
+  .md-button:hover:not([disabled]):not(.md-raised) {
+    background-color: rgba(153, 153, 153, 0.2) !important;
+    color: #ffffff; }
+
+.md-tooltip.md-tooltip-bottom {
+  margin-top: 18px !important; }
+
+.me-menu {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: "Gilroy", Roboto, Arial, sans-serif; }
 
 /*Speed-dial*/
 button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.md-clean.md-theme-purple {
