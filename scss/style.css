@@ -76,6 +76,13 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
   bottom: 96px;
   position: fixed; }
 
+.me-icon-1 {
+  font-size: 1.25em;
+  margin-top: 10px; }
+
+.me-icon-2 {
+  font-size: 1.75em; }
+
 /*Tabs*/
 .md-tabs .md-tabs-navigation.md-has-icon.md-has-label {
   min-height: 72px;
