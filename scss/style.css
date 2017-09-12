@@ -198,7 +198,10 @@ b {
 a.md-button.md-raised.md-primary.md-theme-default {
   background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
   background: -webkit-linear-gradient(left top, rgba(81, 123, 252, 0.75), rgba(135, 40, 254, 0.75)) !important;
-  font-family: "Gilroy",Roboto,Arial,sans-serif; }
+  font-family: "Gilroy",Roboto,Arial,sans-serif;
+  letter-spacing: 2.5px; }
+  a.md-button.md-raised.md-primary.md-theme-default:hover {
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 5px 8px rgba(0, 0, 0, 0.14), 0 1px 14px rgba(0, 0, 0, 0.12); }
 
 /*Content Profile*/
 .about__row {
