@@ -108,6 +108,10 @@ body {
     }
 }
 
+.md-button[disabled] {
+    background: rgba(255, 255, 255, 0.5);
+}
+
 /*Speed-dial*/
 button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.md-clean.md-theme-purple {
     background: -webkit-linear-gradient(left top,rgba(81, 123, 252, 0.75),rgba(135, 40, 254, 0.75));
