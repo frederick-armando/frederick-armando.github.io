@@ -453,7 +453,7 @@ form {
 }
 
 .me-social-2 {
-    color: #3f51b5 !important;
+    color: #678cfc !important;
     background: white !important;
 
     &:hover {
@@ -473,7 +473,7 @@ form {
 }
 
 /*Cookie*/
-.cc-floating.cc-theme-classic {
+/*.cc-floating.cc-theme-classic {
     text-align: center;
     font-size: 0.95rem;
     border-radius: 0px !important;
@@ -493,6 +493,14 @@ a.cc-btn.cc-dismiss {
     &:hover {
         text-decoration: none;
     }
+}*/
+
+.md-theme-default a:not(.md-button) {
+    color: #678cfc !important;
+}
+
+a.cc-btn.cc-dismiss {
+    color: white !important;
 }
 
 /*Loader*/

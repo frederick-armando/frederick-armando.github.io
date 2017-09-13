@@ -334,7 +334,7 @@ form {
   text-align: justify; }
 
 .me-social-2 {
-  color: #3f51b5 !important;
+  color: #678cfc !important;
   background: white !important; }
   .me-social-2:hover {
     color: #3f51b5 !important; }
@@ -348,24 +348,32 @@ form {
   background: #517bfc !important; }
 
 /*Cookie*/
-.cc-floating.cc-theme-classic {
-  text-align: center;
-  font-size: 0.95rem;
-  border-radius: 0px !important;
-  width: 100vw;
-  max-width: 100vw !important;
-  top: 0;
-  padding-bottom: 0.6em !important;
-  flex-direction: row !important;
-  justify-content: space-between;
-  align-items: baseline; }
+/*.cc-floating.cc-theme-classic {
+    text-align: center;
+    font-size: 0.95rem;
+    border-radius: 0px !important;
+    width: 100vw;
+    max-width: 100vw !important;
+    top: 0;
+    padding-bottom: 0.6em !important;
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: baseline;
+}
 
 a.cc-btn.cc-dismiss {
-  font-size: 0.85rem;
-  min-width: 64px !important;
-  max-width: 96px !important; }
-  a.cc-btn.cc-dismiss:hover {
-    text-decoration: none; }
+    font-size: 0.85rem;
+    min-width: 64px !important;
+    max-width: 96px !important;
+    &:hover {
+        text-decoration: none;
+    }
+}*/
+.md-theme-default a:not(.md-button) {
+  color: #678cfc !important; }
+
+a.cc-btn.cc-dismiss {
+  color: white !important; }
 
 /*Loader*/
 .spinner {
