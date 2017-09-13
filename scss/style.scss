@@ -452,6 +452,15 @@ form {
     text-align: justify;
 }
 
+.me-social-2 {
+    color: #3f51b5 !important;
+    background: white !important;
+
+    &:hover {
+        color: #3f51b5 !important;
+    }
+}
+
 /*Ripple*/
 .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header.md-active, .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header:focus, .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header {
     color: rgba(0, 0, 0, 0.87) !important;
