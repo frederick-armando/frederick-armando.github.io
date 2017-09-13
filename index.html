@@ -100,11 +100,6 @@
                 <md-icon md-iconset="fa fa-github" class="netbig"></md-icon>
                 <md-tooltip md-direction="bottom">Github</md-tooltip>
             </md-button>
-			<!--md-button class="md-icon-button md-raised md-dense">
-                <md-icon md-src="icons/viadeo-logo.svg"></md-icon>
-            </md-button
-            <md-button class="me-head">Blog</md-button>
-            <md-button class="me-head">Language</md-button>-->
         </div>
 	</md-toolbar>
 	
@@ -121,10 +116,6 @@
 			<md-icon>turned_in</md-icon>
 		 	<md-tooltip md-direction="left">Blog uxvr.fr</md-tooltip>
 		</md-button>
-		<!--<md-button class="md-fab md-primary md-mini md-clean">
-			<md-icon>language</md-icon>
-			<md-tooltip md-direction="left">French Translation</md-tooltip>
-		</md-button>-->
 	</md-speed-dial>
 
 	<md-tabs md-centered>
@@ -134,7 +125,7 @@
         <h2 class="me-intro">Hi, I'm a <span id="monage"></span> years old <b>UX Designer</b> based in Paris, France.</h2>
         <div>
             <!--<md-button class="md-raised md-accent">Currently working at Keluro</md-button>-->
-            <md-button class="md-raised md-primary"  href="mailto:frederickarmando@gmail.com?subject=Internship 2018&body=Hi, I think you might be interested in a job!"><!--disabled-->Intern for hire!</md-button>
+            <md-button class="md-raised md-primary me-button"  href="mailto:frederickarmando@gmail.com?subject=Internship 2018&body=Hi, I think you might be interested in a job!"><!--disabled-->Intern for hire!</md-button>
             <!--<md-tooltip md-direction="bottom">From February to August 2018</md-tooltip>-->
             <md-tooltip md-direction="bottom">Send me your proposals</md-tooltip>
         </div>
@@ -213,8 +204,52 @@
 	  </md-tab>
 
 		<md-tab md-label="Contact" md-icon="chat">
-		 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorum quas.</p>
-	  </md-tab>
+            <div class="about__wrapper me-contact">
+                <div class="layout__dynamic-title-wrapper">
+                    <h1 class="layout__dynamic-title">Stay in touch</h1>
+                </div>
+                <!--<form method="POST" action="http://formspree.io/frederickarmando@gmail.com">
+                    <input type="hidden" name="_cc" value="another@email.com" />
+                    <input type="hidden" name="_language" value="en" />
+                    <input type="email" name="email" placeholder="Your email">
+                    <input type="object" name="_subject" value="New submission!" />
+                    <textarea name="message" placeholder="Your message"></textarea>
+                    <button type="submit">Send</button>
+                    <input type="hidden" name="_next" value="https://uxvr.fr" />
+                </form>-->
+
+                <div class="about__row">
+                    <section class="about__section">
+                        <h2 class="about__title">Would you meet me?</h2>
+                        <p>I always enjoy to meet new and interesting people around a cup of coffee.</p>
+                        <p>Where to find me:<br /><b><a href="https://goo.gl/EhS9fp" target="_blank" class="link">6 Avenue de la République, Epinay-sur-Seine</a></b></p>
+                        <p>You could also call me or write me something.<br /> I'll answer you as fast as possible <br /><b><a href="tel:+33659054369" class="link">06 59 05 43 69</a></b> - <b><a href="mailto:frederickarmando@gmail.com" class="link">Email</a></b></p>
+                    </section>
+                    <section class="about__section">
+                        <h2 class="about__title">Or rather message me?</h2>
+                        <form method="POST" action="http://formspree.io/frederickarmando@gmail.com">
+                            <md-input-container>
+                                <md-icon>mail_outline</md-icon>
+                                <label>Your email</label>
+                                <md-input type="email" name="email"></md-input>
+                            </md-input-container>
+                            <md-input-container>
+                                <md-icon>title</md-icon>
+                                <label>Your topic</label>
+                                <md-input type="object" name="_subject"></md-input>
+                            </md-input-container>
+                            <md-input-container>
+                                <md-icon>subject</md-icon>
+                                <label>Your message</label>
+                                <md-textarea name="message" maxlength="280"></md-textarea>
+                            </md-input-container>
+                            <md-button class="md-raised md-primary me-button" type="submit">Send the message</md-button>
+                            <input type="hidden" name="_next" value="https://uxvr.fr" />
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </md-tab>
 	</md-tabs>
 
   </div>
