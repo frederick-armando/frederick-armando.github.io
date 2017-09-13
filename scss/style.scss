@@ -267,7 +267,7 @@ b {
     }
 }
 
-a.md-button.md-raised.md-primary.md-theme-default {
+.me-button {
     background: -webkit-linear-gradient(left top,#517bfc,#8728fe);
     background: -webkit-linear-gradient(left top,rgba(81, 123, 252, 0.75),rgba(135, 40, 254, 0.75)) !important;
     font-family: "Gilroy",Roboto,Arial,sans-serif;
@@ -299,15 +299,15 @@ section.about__section {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     -ms-flex: 1;
-    flex: 2;
+    flex: 1;
     padding-right: 80px;
 
-    &:first-child {
-        flex: 1;
+
+    &:nth-child(2){
+        flex: 2;
     }
 
     &:last-child {
-        flex: 1;
             @media screen and (min-width: $break-medium) {
                 padding-right: 0;
             }
@@ -332,8 +332,12 @@ section.about__section {
             }
 
             &:last-child {
-                margin-top: -50px;
+                width: 90vw;
             }
+        }
+
+        #studies {
+            margin-top: -50px;
         }
 
         .layout__dynamic-title-wrapper {
@@ -342,7 +346,9 @@ section.about__section {
     }
 
 .about__wrapper {
-    max-width: 90vw;
+    width: 90vw;
+    max-width: 1160px;
+    margin: auto;
 }
 
 img#frederickarmando {
@@ -401,6 +407,15 @@ img#frederickarmando {
 .slideshow .slick-dots li button:before {
     height: 5px !important;
     border-radius: 5px !important;
+}
+
+/*Content Contact*/
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
 }
 
 /*Ripple*/
