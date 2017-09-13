@@ -125,14 +125,14 @@ html {
 }
 
 .slideshow-text {
-    font-size: 60px;
+    font-size: 48px;
     width: 100vw;
-    font-family: "Gilroy",Roboto,Arial,sans-serif;
+    font-family: "GilroyBold",Roboto,Arial,sans-serif;
     font-weight: bold; /*100*/
     pointer-events: none;
     /*text-transform: uppercase;*/
     letter-spacing: 14px;
-    line-height: .8;
+    line-height: 1.6;
     position: fixed;
     z-index: 99;
     height: unset;
