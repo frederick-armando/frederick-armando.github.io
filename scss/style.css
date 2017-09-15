@@ -128,7 +128,10 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
   max-width: 185px;
   /*unset*/
   text-transform: initial;
-  font-family: "GilroyBold",Roboto,Arial,sans-serif; }
+  font-family: "Gilroy",Roboto,Arial,sans-serif; }
+  @media screen and (min-width: 420px) {
+    .md-tabs .md-tab-header {
+      font-family: "GilroyBold",Roboto,Arial,sans-serif; } }
   .md-tabs .md-tab-header.md-active i, .md-tabs .md-tab-header.md-active span {
     background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
     -webkit-background-clip: text;
@@ -151,6 +154,9 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
 .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-indicator {
   background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
   height: 5px; }
+  @media screen and (max-width: 420px) {
+    .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-indicator {
+      display: none; } }
 
 @media screen and (max-width: 420px) {
   .md-tabs .md-tabs-navigation-scroll-container, .md-tabs .md-tabs-navigation-container {
@@ -166,6 +172,9 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
 
 .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header-navigation-button {
   background: -webkit-linear-gradient(left top, #517bfc, #8728fe); }
+
+button.md-tab-header-navigation-button.md-left.md-disabled {
+  display: none; }
 
 /*Content Home*/
 #logo {

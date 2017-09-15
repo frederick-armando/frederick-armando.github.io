@@ -70,14 +70,14 @@ body {
     }
 }
 
-@media screen and (min-width: 420px) {
-	.me-logo {
-		content:url("../img/Logo_Full_White.svg");
-	}
-	  
-	.me-social{
+@media screen and (min-width: $break-small) {
+    .me-logo {
+        content: url("../img/Logo_Full_White.svg");
+    }
+
+    .me-social {
         margin-right: 8px;
-	}
+    }
 }
 
 .md-button {
@@ -176,7 +176,12 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
     min-width: unset;
     max-width: 185px; /*unset*/
     text-transform: initial;
-    font-family: "GilroyBold",Roboto,Arial,sans-serif;
+    font-family: "Gilroy",Roboto,Arial,sans-serif;
+
+    @media screen and (min-width: $break-small) {
+        font-family: "GilroyBold",Roboto,Arial,sans-serif;
+    }
+
 
     &.md-active {
         i, span {
@@ -210,6 +215,10 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
 .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-indicator {
     background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
     height: 5px;
+
+    @media screen and (max-width: $break-small) {
+        display: none;
+    }
 }
 
 .md-tabs .md-tabs-navigation-scroll-container, .md-tabs .md-tabs-navigation-container {
@@ -232,6 +241,10 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
 
 .md-theme-default.md-tabs>.md-tabs-navigation .md-tab-header-navigation-button {
     background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
+}
+
+button.md-tab-header-navigation-button.md-left.md-disabled {
+    display: none;
 }
 
 /*Content Home*/
