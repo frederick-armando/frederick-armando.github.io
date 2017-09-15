@@ -271,19 +271,19 @@ svg {
   content: ''; }
 
 .process-details .discover .heading::after {
-  background: #50b1aa; }
+  background: #5d69fd; }
 
 .process-details .design .heading::after {
-  background: #f57a73; }
+  background: #517afc; }
 
 .process-details .implement .heading::after {
-  background: #ffb566; }
+  background: #6857fd; }
 
 .process-details .develop .heading::after {
-  background: #43c0e6; }
+  background: #8729fe; }
 
 .process-details .deliver .heading::after {
-  background: #60666a; }
+  background: #7642fd; }
 
 @media all and (min-width: 800px) {
   .process-details {
