@@ -99,7 +99,7 @@ body {
 
 .me-menu {
     color: rgba(0, 0, 0, .87);
-    font-family: "Gilroy", Roboto, Arial, sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
 }
 
 @media screen and (max-width: $break-small) {
@@ -176,10 +176,10 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
     min-width: unset;
     max-width: 185px; /*unset*/
     text-transform: initial;
-    font-family: "Gilroy",Roboto,Arial,sans-serif;
+    font-family: "Gilroy",Arial,sans-serif;
 
     @media screen and (min-width: $break-small) {
-        font-family: "GilroyBold",Roboto,Arial,sans-serif;
+        font-family: "GilroyBold",Arial,sans-serif;
     }
 
 
@@ -191,7 +191,7 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
         }
 
         span {
-            font-family: "GilroyBold",Roboto,Arial,sans-serif;
+            font-family: "GilroyBold",Arial,sans-serif;
             font-weight: bold;
         }
     }
@@ -255,7 +255,7 @@ button.md-tab-header-navigation-button.md-left.md-disabled {
 }
 
 h1 {
-    font-family: "GilroyBold", Roboto, Arial, sans-serif;
+    font-family: "GilroyBold", Arial, sans-serif;
     font-weight: bold;
 
     @media screen and (max-width: $break-small) {
@@ -264,7 +264,7 @@ h1 {
 }
 
 h2 {
-    font-family: "Gilroy", Roboto, Arial, sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
     font-weight: 500;
     &.me-intro{
         text-align: center;
@@ -272,11 +272,11 @@ h2 {
 }
 
 p {
-    font-family: "Gilroy", Roboto, Arial, sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
 }
 
 b {
-    font-family: "GilroyBold", Roboto, Arial, sans-serif;
+    font-family: "GilroyBold", Arial, sans-serif;
 }
 
 .link {
@@ -317,7 +317,7 @@ b {
 .me-button {
     background: -webkit-linear-gradient(left top,#517bfc,#8728fe);
     background: -webkit-linear-gradient(left top,rgba(81, 123, 252, 0.75),rgba(135, 40, 254, 0.75)) !important;
-    font-family: "Gilroy",Roboto,Arial,sans-serif;
+    font-family: "Gilroy",Arial,sans-serif;
     letter-spacing: 2.5px;
 
     &:hover {

@@ -67,7 +67,7 @@ body {
 
 .me-menu {
   color: rgba(0, 0, 0, 0.87);
-  font-family: "Gilroy", Roboto, Arial, sans-serif; }
+  font-family: "Gilroy", Arial, sans-serif; }
 
 @media screen and (max-width: 420px) {
   .md-tooltip-top {
@@ -128,16 +128,16 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
   max-width: 185px;
   /*unset*/
   text-transform: initial;
-  font-family: "Gilroy",Roboto,Arial,sans-serif; }
+  font-family: "Gilroy",Arial,sans-serif; }
   @media screen and (min-width: 420px) {
     .md-tabs .md-tab-header {
-      font-family: "GilroyBold",Roboto,Arial,sans-serif; } }
+      font-family: "GilroyBold",Arial,sans-serif; } }
   .md-tabs .md-tab-header.md-active i, .md-tabs .md-tab-header.md-active span {
     background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
   .md-tabs .md-tab-header.md-active span {
-    font-family: "GilroyBold",Roboto,Arial,sans-serif;
+    font-family: "GilroyBold",Arial,sans-serif;
     font-weight: bold; }
   .md-tabs .md-tab-header i {
     color: rgba(0, 0, 0, 0.42); }
@@ -183,23 +183,23 @@ button.md-tab-header-navigation-button.md-left.md-disabled {
   margin-right: 15px; }
 
 h1 {
-  font-family: "GilroyBold", Roboto, Arial, sans-serif;
+  font-family: "GilroyBold", Arial, sans-serif;
   font-weight: bold; }
   @media screen and (max-width: 420px) {
     h1 {
       text-align: center; } }
 
 h2 {
-  font-family: "Gilroy", Roboto, Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 500; }
   h2.me-intro {
     text-align: center; }
 
 p {
-  font-family: "Gilroy", Roboto, Arial, sans-serif; }
+  font-family: "Gilroy", Arial, sans-serif; }
 
 b {
-  font-family: "GilroyBold", Roboto, Arial, sans-serif; }
+  font-family: "GilroyBold", Arial, sans-serif; }
 
 .link {
   color: #517bfc !important;
@@ -230,7 +230,7 @@ b {
 .me-button {
   background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
   background: -webkit-linear-gradient(left top, rgba(81, 123, 252, 0.75), rgba(135, 40, 254, 0.75)) !important;
-  font-family: "Gilroy",Roboto,Arial,sans-serif;
+  font-family: "Gilroy",Arial,sans-serif;
   letter-spacing: 2.5px; }
   .me-button:hover {
     box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 5px 8px rgba(0, 0, 0, 0.14), 0 1px 14px rgba(0, 0, 0, 0.12); }
