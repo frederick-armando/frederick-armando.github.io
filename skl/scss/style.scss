@@ -122,7 +122,7 @@ svg {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: justify;
+    text-align: justify; /*justify*/
     /*min-height: 100vh; calc(100vh - 136px) !important*/
 }
 	/*@media all and (min-width: 640px) {
@@ -138,7 +138,7 @@ svg {
 	}*/
 
 .me-conteneur {
-    @media all and (min-width: 720px) {
+    @media all and (min-width: 780px) {
         height: 100vh;
         width: 90vw;
         margin: auto;
@@ -166,6 +166,9 @@ svg {
     width: 90vw;
     max-width: 1160px;
     /*margin: auto;*/
+    @media all and (min-width: 580px) and (max-width: 780px) {
+        padding-top: 4em;
+    }
 }
 
 /*  SPLIT VISION  */
@@ -213,7 +216,7 @@ svg {
 		max-width: 1160px;
 	}
 	.process .discover,
-	.process .design,
+	.process .define,
 	.process .implement,
 	.process .develop,
 	.process .deliver {
@@ -223,7 +226,7 @@ svg {
 		transition: opacity 0.25s;
 	}
 	.process.js-animate .discover,
-	.process.js-animate .design,
+	.process.js-animate .define,
 	.process.js-animate .implement,
 	.process.js-animate .develop,
 	.process.js-animate .deliver {
@@ -232,7 +235,7 @@ svg {
 	.process.js-animate .discover {
 		animation-delay: 0.25s;
 	}
-	.process.js-animate .design {
+	.process.js-animate .define {
 		animation-delay: 0.5s;
 	}
 	.process.js-animate .implement {
@@ -270,7 +273,7 @@ svg {
 	    }
 	}
 	.process-details .discover,
-	.process-details .design,
+	.process-details .define,
 	.process-details .implement,
 	.process-details .develop,
 	.process-details .deliver {
@@ -286,14 +289,14 @@ svg {
 	}
 
 	.process-details .discover .heading,
-	.process-details .design .heading,
+	.process-details .define .heading,
 	.process-details .implement .heading,
 	.process-details .develop .heading,
 	.process-details .deliver .heading {
         font-size: 21px;
 	}
 	.process-details .discover .heading::after,
-	.process-details .design .heading::after,
+	.process-details .define .heading::after,
 	.process-details .implement .heading::after,
 	.process-details .develop .heading::after,
 	.process-details .deliver .heading::after {
@@ -306,7 +309,7 @@ svg {
 	.process-details .discover .heading::after {
 		background: #5d69fd;
 	}
-	.process-details .design .heading::after {
+	.process-details .define .heading::after {
 		background: #517afc;
 	}
 	.process-details .implement .heading::after {
@@ -325,22 +328,22 @@ svg {
 			flex-wrap: wrap;
 			justify-content: center;
 		}
-		.process-details .discover,
-		.process-details .design,
-		.process-details .implement,
-		.process-details .develop,
-		.process-details .deliver {
-			width: 50%;
-			padding-right: 1em;
-			padding-left: 1em;
-		}
+        .process-details .discover,
+        .process-details .define,
+        .process-details .implement,
+        .process-details .develop,
+        .process-details .deliver {
+            width: 50%;
+            padding-right: 1em;
+            padding-left: 1em;
+        }
 
         .process-details .discover {
             order: 1;
         }
-		.process-details .design {
-			order: 2;
-		}
+        .process-details .define {
+            order: 2;
+        }
 		.process-details .implement {
 			order: 3;
 		}
@@ -352,23 +355,23 @@ svg {
         }
 	}
 	@media all and (min-width: 800px) {
-		.process-details .discover,
-		.process-details .design,
-		.process-details .implement,
-		.process-details .develop,
-		.process-details .deliver {
-			width: 20%;
-		}
+        .process-details .discover,
+        .process-details .define,
+        .process-details .implement,
+        .process-details .develop,
+        .process-details .deliver {
+            width: 20%;
+        }
 	}
 	@media all and (min-width: 1280px) {
-		.process-details .discover,
-		.process-details .design,
-		.process-details .implement,
-		.process-details .develop,
-		.process-details .deliver {
-			padding-right: 1em;
-			padding-left: 1em;
-		}
+        .process-details .discover,
+        .process-details .define,
+        .process-details .implement,
+        .process-details .develop,
+        .process-details .deliver {
+            padding-right: 1em;
+            padding-left: 1em;
+        }
         .process-details .discover {
             padding-left: 0em;
         }
