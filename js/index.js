@@ -10,7 +10,7 @@ var App = new Vue({
     created() {
         setTimeout(() => {
             this.loading = false;
-        }, 1000);
+        }, 100);
     },
     data: {
         message: 'Hello Vue!',
