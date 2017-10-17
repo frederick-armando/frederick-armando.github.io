@@ -103,7 +103,7 @@ body {
 }
 
 @media screen and (max-width: $break-small) {
-    .md-tooltip-top {
+    .md-tooltip-top, .network {
         display: none;
     }
 }
