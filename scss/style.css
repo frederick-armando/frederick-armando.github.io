@@ -321,7 +321,7 @@ img#frederickarmando {
   font-size: 42px; }
 
 /*Content Project*/
-#iframe1 {
+#iframe1, #iframe2 {
   height: 100%;
   left: 0px;
   position: absolute;

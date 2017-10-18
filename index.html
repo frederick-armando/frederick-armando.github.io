@@ -38,32 +38,6 @@
 
     <link rel="stylesheet" href="scss/style.min.css">
 
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-    <script>
-        window.addEventListener("load", function () {
-            window.cookieconsent.initialise({
-                "palette": {
-                    "popup": {
-                        "background": "#edeff5",
-                        "text": "#838391"
-                    },
-                    "button": {
-                        "background": "#4b81e8"
-                    }
-                },
-                "theme": "edgeless",
-                "position": "top",
-                "static": true,
-                "content": {
-                    "message": "This website uses cookies to ensure you get the best experience.",
-                    /*"dismiss": "Got it!",
-                    "link": "cookies."*/
-                }
-            })
-        });
-    </script>  
-
 </head>
 
 <body>
@@ -226,7 +200,7 @@
 	  </md-tab>
 
 	  <md-tab md-label="Projects" md-icon="view_agenda">
-        <iframe id="iframe1" src="./prj/index.html" frameborder="0"></iframe>
+        <iframe id="iframe2" src="./prj/index.html" frameborder="0"></iframe>
 	  </md-tab>
 
 		<md-tab md-label="Contact" md-icon="email">
@@ -307,5 +281,31 @@
 <script src="js/index.js"></script>
 
 </body>
+
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+            window.addEventListener("load", function () {
+                window.cookieconsent.initialise({
+                    "palette": {
+                        "popup": {
+                            "background": "#edeff5",
+                            "text": "#838391"
+                        },
+                        "button": {
+                            "background": "#4b81e8"
+                        }
+                    },
+                    "theme": "edgeless",
+                    "position": "top",
+                    "static": true,
+                    "content": {
+                        "message": "This website uses cookies to ensure you get the best experience.",
+                        /*"dismiss": "Got it!",
+                        "link": "cookies."*/
+                    }
+                })
+            });
+</script>  
 
 </html>
