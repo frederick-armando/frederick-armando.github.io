@@ -435,3 +435,9 @@ a.cc-btn.cc-dismiss {
   max-width: 1500px;
   max-height: 150px; }
 
+@supports (-ms-ime-align: auto) {
+  .md-active i {
+    color: #517bfc !important;
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: unset !important; } }
+
