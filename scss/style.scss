@@ -43,7 +43,7 @@ body {
 }
 .md-button.md-icon-button.md-dense {
     box-shadow: none;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.75);
     margin-top: 4px;
 
     &:hover {
@@ -81,10 +81,10 @@ body {
 }
 
 .md-button {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.75);
 
     &:hover:not([disabled]):not(.md-raised) {
-        background-color: hsla(0,0%,60%,.2) !important;
+        background-color: transparent !important; /*hsla(0,0%,60%,.2)*/
         color: #ffffff;
     }
 }
@@ -110,6 +110,10 @@ body {
 
 .md-button[disabled] {
     background: rgba(255, 255, 255, 0.5);
+}
+
+.md-list-item.md-menu-item:hover {
+    background: hsla(0,0%,60%,.2) !important;
 }
 
 /*Speed-dial*/
