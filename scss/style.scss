@@ -590,7 +590,7 @@ a.cc-btn.cc-dismiss {
 
 
 @supports (-ms-ime-align: auto) {
-    .md-active i {
+    .md-tabs .md-tab-header.md-active i {
         color: #517bfc !important;
         -webkit-background-clip: unset !important;
         -webkit-text-fill-color: unset !important;
