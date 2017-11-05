@@ -133,6 +133,74 @@
             <!--<md-tooltip md-direction="bottom">From February to August 2018</md-tooltip>-->
             <md-tooltip md-direction="bottom">Send me your proposals</md-tooltip>
         </div>
+
+        <script type="text/javascript">
+            // Workaround for bug in MS Edge with SVG images
+            // with `max-width` `max-height`. Remove this if
+            // the bug is resolved.
+            // Report: https://connect.microsoft.com/IE/feedback/details/1494666/scaling-an-svg-using-max-width-vs-width-in-microsoft-edge
+            document.addEventListener('DOMContentLoaded', function () {
+                'use strict';
+
+                var forEach = Array.prototype.forEach;
+
+                // Function that sets the width and height for each image
+                // by respecting `max-width` and `max-height`.
+                var setWidthHeight = function (svgImageEl) {
+
+                    var cssMaxWidth = getComputedStyle(svgImageEl)['max-width'];
+
+                    // Assume that `max-width` == `max-height`.
+                    var cssMaxHeight = cssMaxWidth;
+
+                    var imgAspectRatio = svgImageEl.naturalWidth /
+                        svgImageEl.naturalHeight;
+
+                    // If CSS `max-width` is set, calculate the the values for
+                    // `width` and `height` and set them as inline styles
+                    // to mimic the behaviour of `max-width` and `max-height`.
+                    if (cssMaxWidth !== 'none') {
+                        if (imgAspectRatio < 1) {
+
+                            svgImageEl.style.width = (parseInt(cssMaxWidth, 10) *
+                                imgAspectRatio) + 'px';
+                            svgImageEl.style.height = cssMaxHeight;
+
+                        } else {
+                            svgImageEl.style.width = cssMaxWidth;
+                            svgImageEl.style.height = (parseInt(cssMaxWidth, 10) /
+                                imgAspectRatio) + 'px';
+                        }
+                    }
+                };
+
+                // If the browser is Microsoft Edge,
+                // execute this workaround
+                if (navigator.userAgent.indexOf('Edge') !== -1) {
+
+                    // Select all SVG images on the page, then
+                    // call the forEach function (from array prototypes) to iterate over
+                    // the SVG image elements
+                    forEach.call(document.querySelectorAll('img[src$=".svg"]'),
+                        function (svgImageEl) {
+
+                            // Only proceed if the image has loaded,
+                            // otherwise `naturalWidth` and `naturalHeight`
+                            // will be 0
+                            svgImageEl.addEventListener('load', function () {
+                                setWidthHeight(svgImageEl);
+                            });
+
+                            // In case the image is loaded in cache
+                            if (svgImageEl.complete) {
+                                setWidthHeight(svgImageEl);
+                            }
+                        }
+                    );
+                }
+            });
+        </script>
+
         <script type="text/javascript">
             function getAge(dateString) {
                 var today = new Date();
@@ -260,7 +328,7 @@
                                 <label>Your message</label>
                                 <md-input name="message" maxlength="280"></md-input>
                             </md-input-container>
-                            <md-button class="md-raised md-primary me-button" type="submit">Send</md-button>
+                            <md-button class="md-raised md-primary me-button" type="submit">Send message</md-button>
                             <input type="hidden" name="_next" value="http://frederickarmando.fr" />
                         </form>
                     </section>

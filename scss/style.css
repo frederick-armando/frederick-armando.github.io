@@ -136,8 +136,12 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
   @media screen and (min-width: 420px) {
     .md-tabs .md-tab-header {
       font-family: "GilroyBold",Arial,sans-serif; } }
-  .md-tabs .md-tab-header.md-active i, .md-tabs .md-tab-header.md-active span {
+  .md-tabs .md-tab-header.md-active span {
     background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .md-tabs .md-tab-header.md-active i {
+    background: -webkit-linear-gradient(left top, #517bfc, #645ffd);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
   .md-tabs .md-tab-header.md-active span {
@@ -426,4 +430,20 @@ a.cc-btn.cc-dismiss {
   50% {
     transform: scale(1);
     -webkit-transform: scale(1); } }
+
+/*Edge Fix*/
+.md-tabs .md-tabs-navigation.md-has-navigation-scroll .md-tab-header-navigation-button.md-right {
+  display: none; }
+
+#logo {
+  max-width: 1500px;
+  max-height: 150px; }
+
+@supports (-ms-ime-align: auto) {
+  .md-tabs .md-tab-header.md-active i {
+    color: #517bfc !important;
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: unset !important; }
+  .md-tabs .md-tab-header-container {
+    margin-bottom: 12px; } }
 
