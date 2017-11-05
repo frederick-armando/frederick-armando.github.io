@@ -444,6 +444,7 @@ img#frederickarmando {
     font-size: 42px;
 }
 
+
 /*Content Project*/
 #iframe1, #iframe2 {
     height: 100%;
@@ -568,4 +569,15 @@ a.cc-btn.cc-dismiss {
         transform: scale(1.0);
         -webkit-transform: scale(1.0);
     }
+}
+
+/*Edge Fix*/
+
+.md-tabs .md-tabs-navigation.md-has-navigation-scroll .md-tab-header-navigation-button.md-right {
+    display: none;
+}
+
+#logo {
+    max-width: 1500px;
+    max-height: 150px;
 }
