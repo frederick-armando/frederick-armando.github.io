@@ -188,8 +188,14 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
 
 
     &.md-active {
-        i, span {
+        span {
             background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        i {
+            background: -webkit-linear-gradient(left top,#517bfc,#645ffd);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
