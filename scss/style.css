@@ -439,5 +439,7 @@ a.cc-btn.cc-dismiss {
   .md-active i {
     color: #517bfc !important;
     -webkit-background-clip: unset !important;
-    -webkit-text-fill-color: unset !important; } }
+    -webkit-text-fill-color: unset !important; }
+  .md-tabs .md-tab-header-container {
+    margin-bottom: 12px; } }
 
