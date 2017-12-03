@@ -70,6 +70,16 @@ html {
           content: '';
           background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
           /*#fff*/
+          background-color: #8728fe !important;
+          background: #0A284B;
+          background: -webkit-gradient(linear, left top, right bottom, from(#517bfc), to(#8728fe));
+          background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
+          background: -moz-linear-gradient(left top, #517bfc, #8728fe);
+          background: -ms-linear-gradient(left top, #517bfc, #8728fe);
+          background: -o-linear-gradient(left top, #517bfc, #8728fe);
+          background: linear-gradient(left top, #517bfc, #8728fe);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#517bfc', endColorstr='#8728fe');
+          zoom: 1;
           color: #fff;
           height: 5px !important;
           width: 20px;
@@ -128,7 +138,8 @@ html {
 p {
   background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  -webkit-text-fill-color: transparent;
+  color: #8728fe !important; }
 
 @media screen and (max-width: 720px) {
   .slideshow .slider .item img {

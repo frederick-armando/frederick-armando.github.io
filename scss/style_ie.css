@@ -2,6 +2,18 @@
     margin-right: 150px;
 }
 
+.md-toolbar {
+    background: #0A284B;
+    background: -webkit-gradient(linear, left top, right bottom, from(#517bfc), to(#8728fe));
+    background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
+    background: -moz-linear-gradient(left top, #517bfc, #8728fe);
+    background: -ms-linear-gradient(left top, #517bfc, #8728fe);
+    background: -o-linear-gradient(left top, #517bfc, #8728fe);
+    background: linear-gradient(left top, #517bfc, #8728fe);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#517bfc', endColorstr='#8728fe');
+    zoom: 1;
+}
+
 .md-toolbar img{
     height: auto !important;
 }
@@ -20,8 +32,20 @@
     text-align: center;
 }
 
-button.md-button.md-fab.md-theme-purple .md-icon, a.md-button.md-fab.md-primary.md-mini.md-clean.md-theme-purple .md-icon {
+/*button.md-button.md-fab.md-theme-purple .md-icon, a.md-button.md-fab.md-primary.md-mini.md-clean.md-theme-purple .md-icon {
     color: #8728fe;
+}*/
+
+button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.md-clean.md-theme-purple {
+    background: #0A284B;
+    background: -webkit-gradient(linear, left top, right bottom, from(#517bfc), to(#8728fe));
+    background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
+    background: -moz-linear-gradient(left top, #517bfc, #8728fe);
+    background: -ms-linear-gradient(left top, #517bfc, #8728fe);
+    background: -o-linear-gradient(left top, #517bfc, #8728fe);
+    background: linear-gradient(left top, #517bfc, #8728fe);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#517bfc', endColorstr='#8728fe');
+    zoom: 1;
 }
 
 .md-tabs .md-tab-header-container{
@@ -34,10 +58,28 @@ button.md-button.md-fab.md-theme-purple .md-icon, a.md-button.md-fab.md-primary.
 
 .md-theme-default.md-toolbar, .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-indicator {
     background-color: #517bfc !important;
+    background: #0A284B;
+    background: -webkit-gradient(linear, left top, right bottom, from(#517bfc), to(#8728fe));
+    background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
+    background: -moz-linear-gradient(left top, #517bfc, #8728fe);
+    background: -ms-linear-gradient(left top, #517bfc, #8728fe);
+    background: -o-linear-gradient(left top, #517bfc, #8728fe);
+    background: linear-gradient(left top, #517bfc, #8728fe);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#517bfc', endColorstr='#8728fe');
+    zoom: 1;
 }
 
 :not([disabled]):not(.md-icon-button).md-theme-default.md-button.md-raised {
     background-color: #8728fe !important;
+    background: #0A284B;
+    background: -webkit-gradient(linear, left top, right bottom, from(#517bfc), to(#8728fe));
+    background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
+    background: -moz-linear-gradient(left top, #517bfc, #8728fe);
+    background: -ms-linear-gradient(left top, #517bfc, #8728fe);
+    background: -o-linear-gradient(left top, #517bfc, #8728fe);
+    background: linear-gradient(left top, #517bfc, #8728fe);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#517bfc', endColorstr='#8728fe');
+    zoom: 1;
 }
 
 .me-icon-2{
