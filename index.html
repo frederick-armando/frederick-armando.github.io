@@ -14,6 +14,19 @@
     <link href="https://www.google.com/+Fr%C3%A9d%C3%A9rickArmando" rel="publisher" />
     <meta name="p:domain_verify" content="c0d61ea3ae744e6c982693bbd8e3fdb6" />
     
+    <!-- For IE <= 9 -->
+    <!--[if IE]>
+    <script type="text/javascript">
+        window.location = "IE/index.html";
+    </script>
+    <![endif]-->
+    <!-- For IE > 9 -->
+    <script type="text/javascript">
+        if (window.navigator.msPointerEnabled) {
+            window.location = "index_ie.html";
+        }
+    </script>
+
     <!--icones-->
     <link rel="shortcut icon" href="img/Logo_Micro_compressed.png">
     <link rel="image_src" href="img/Logo_Big_compressed.png" />
