@@ -18,7 +18,7 @@
     url('../fonts/GilroyBold.svg#FontName') format('svg'); /* Legacy iOS */
 }
 
-.me-social{
+_:-ms-fullscreen, :root .me-social {
     margin-right: 150px;
 }
 
@@ -34,7 +34,11 @@
     zoom: 1;
 }
 
-.md-toolbar img{
+_:-ms-lang(x), .md-toolbar img {
+    height: 5vh !important;
+}
+
+_:-ms-fullscreen, :root .md-toolbar img {
     height: auto !important;
 }
 
@@ -112,4 +116,8 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
 
 .me-menu{
     padding-top: 5px;
+}
+
+#logo{
+    width: 100%;
 }
