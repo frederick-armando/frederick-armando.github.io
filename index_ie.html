@@ -48,6 +48,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf" />
 
     <link rel="stylesheet" href="scss/style.min.css">
+    <link rel="stylesheet" href="scss/style_ie.css">
 
 </head>
 
@@ -126,148 +127,151 @@
 
 	<md-tabs md-centered>
 	  <md-tab md-label="Accueil" md-icon="home">
+        <div class="ie-fixMinHeight">
+            <img src="http://frederickarmando.fr/img/Logo_Full_compressed.svg" id="logo" alt="Logo Complet Frédérick Armando">
+            <h2 class="me-intro">Bienvenue sur mon site, je suis un <b>UX Designer</b> Parisien de <span id="monage"></span> ans.</h2>
+            <div class="ie-fixButton">
+                <!--<md-button class="md-raised md-accent">Currently working at Keluro</md-button>-->
+                <md-button class="md-raised md-primary me-button" href="mailto:frederickarmando@gmail.com?subject=Stage 2018&body=Bonjour, je pense que vous pourriez être intéressé par une offre ..."><!--disabled-->Stagiaire à saisir</md-button>
+                <!--<md-tooltip md-direction="bottom">From February to August 2018</md-tooltip>-->
+                <md-tooltip md-direction="bottom">Envoyez-moi vos propositions</md-tooltip>
+            </div>
 
-        <img src="http://frederickarmando.fr/img/Logo_Full_compressed.svg" id="logo" alt="Logo Complet Frédérick Armando">
-        <h2 class="me-intro">Bienvenue sur mon site, je suis un <b>UX Designer</b> Parisien de <span id="monage"></span> ans.</h2>
-        <div>
-            <!--<md-button class="md-raised md-accent">Currently working at Keluro</md-button>-->
-            <md-button class="md-raised md-primary me-button"  href="mailto:frederickarmando@gmail.com?subject=Stage 2018&body=Bonjour, je pense que vous pourriez être intéressé par une offre ..."><!--disabled-->Stagiaire à saisir</md-button>
-            <!--<md-tooltip md-direction="bottom">From February to August 2018</md-tooltip>-->
-            <md-tooltip md-direction="bottom">Envoyez-moi vos propositions</md-tooltip>
-        </div>
+            <script type="text/javascript">
+                // Workaround for bug in MS Edge with SVG images
+                // with `max-width` `max-height`. Remove this if
+                // the bug is resolved.
+                // Report: https://connect.microsoft.com/IE/feedback/details/1494666/scaling-an-svg-using-max-width-vs-width-in-microsoft-edge
+                document.addEventListener('DOMContentLoaded', function () {
+                    'use strict';
 
-        <script type="text/javascript">
-            // Workaround for bug in MS Edge with SVG images
-            // with `max-width` `max-height`. Remove this if
-            // the bug is resolved.
-            // Report: https://connect.microsoft.com/IE/feedback/details/1494666/scaling-an-svg-using-max-width-vs-width-in-microsoft-edge
-            document.addEventListener('DOMContentLoaded', function () {
-                'use strict';
+                    var forEach = Array.prototype.forEach;
 
-                var forEach = Array.prototype.forEach;
+                    // Function that sets the width and height for each image
+                    // by respecting `max-width` and `max-height`.
+                    var setWidthHeight = function (svgImageEl) {
 
-                // Function that sets the width and height for each image
-                // by respecting `max-width` and `max-height`.
-                var setWidthHeight = function (svgImageEl) {
+                        var cssMaxWidth = getComputedStyle(svgImageEl)['max-width'];
 
-                    var cssMaxWidth = getComputedStyle(svgImageEl)['max-width'];
+                        // Assume that `max-width` == `max-height`.
+                        var cssMaxHeight = cssMaxWidth;
 
-                    // Assume that `max-width` == `max-height`.
-                    var cssMaxHeight = cssMaxWidth;
+                        var imgAspectRatio = svgImageEl.naturalWidth /
+                            svgImageEl.naturalHeight;
 
-                    var imgAspectRatio = svgImageEl.naturalWidth /
-                        svgImageEl.naturalHeight;
+                        // If CSS `max-width` is set, calculate the the values for
+                        // `width` and `height` and set them as inline styles
+                        // to mimic the behaviour of `max-width` and `max-height`.
+                        if (cssMaxWidth !== 'none') {
+                            if (imgAspectRatio < 1) {
 
-                    // If CSS `max-width` is set, calculate the the values for
-                    // `width` and `height` and set them as inline styles
-                    // to mimic the behaviour of `max-width` and `max-height`.
-                    if (cssMaxWidth !== 'none') {
-                        if (imgAspectRatio < 1) {
+                                svgImageEl.style.width = (parseInt(cssMaxWidth, 10) *
+                                    imgAspectRatio) + 'px';
+                                svgImageEl.style.height = cssMaxHeight;
 
-                            svgImageEl.style.width = (parseInt(cssMaxWidth, 10) *
-                                imgAspectRatio) + 'px';
-                            svgImageEl.style.height = cssMaxHeight;
-
-                        } else {
-                            svgImageEl.style.width = cssMaxWidth;
-                            svgImageEl.style.height = (parseInt(cssMaxWidth, 10) /
-                                imgAspectRatio) + 'px';
-                        }
-                    }
-                };
-
-                // If the browser is Microsoft Edge,
-                // execute this workaround
-                if (navigator.userAgent.indexOf('Edge') !== -1) {
-
-                    // Select all SVG images on the page, then
-                    // call the forEach function (from array prototypes) to iterate over
-                    // the SVG image elements
-                    forEach.call(document.querySelectorAll('img[src$=".svg"]'),
-                        function (svgImageEl) {
-
-                            // Only proceed if the image has loaded,
-                            // otherwise `naturalWidth` and `naturalHeight`
-                            // will be 0
-                            svgImageEl.addEventListener('load', function () {
-                                setWidthHeight(svgImageEl);
-                            });
-
-                            // In case the image is loaded in cache
-                            if (svgImageEl.complete) {
-                                setWidthHeight(svgImageEl);
+                            } else {
+                                svgImageEl.style.width = cssMaxWidth;
+                                svgImageEl.style.height = (parseInt(cssMaxWidth, 10) /
+                                    imgAspectRatio) + 'px';
                             }
                         }
-                    );
-                }
-            });
-        </script>
+                    };
 
-        <script type="text/javascript">
-            function getAge(dateString) {
-                var today = new Date();
-                var birthDate = new Date(dateString);
-                var age = today.getFullYear() - birthDate.getFullYear();
-                var m = today.getMonth() - birthDate.getMonth();
-                if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-                    age--;
-                }
-                return age;
-                console.log('age: ' + getAge("1995/04/04"));
-            }
+                    // If the browser is Microsoft Edge,
+                    // execute this workaround
+                    if (navigator.userAgent.indexOf('Edge') !== -1) {
 
-            document.getElementById('monage').innerHTML = getAge("1995/04/04");
-        </script>
-      </md-tab>
+                        // Select all SVG images on the page, then
+                        // call the forEach function (from array prototypes) to iterate over
+                        // the SVG image elements
+                        forEach.call(document.querySelectorAll('img[src$=".svg"]'),
+                            function (svgImageEl) {
+
+                                // Only proceed if the image has loaded,
+                                // otherwise `naturalWidth` and `naturalHeight`
+                                // will be 0
+                                svgImageEl.addEventListener('load', function () {
+                                    setWidthHeight(svgImageEl);
+                                });
+
+                                // In case the image is loaded in cache
+                                if (svgImageEl.complete) {
+                                    setWidthHeight(svgImageEl);
+                                }
+                            }
+                        );
+                    }
+                });
+            </script>
+
+            <script type="text/javascript">
+                function getAge(dateString) {
+                    var today = new Date();
+                    var birthDate = new Date(dateString);
+                    var age = today.getFullYear() - birthDate.getFullYear();
+                    var m = today.getMonth() - birthDate.getMonth();
+                    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                        age--;
+                    }
+                    return age;
+                    console.log('age: ' + getAge("1995/04/04"));
+                }
+
+                document.getElementById('monage').innerHTML = getAge("1995/04/04");
+            </script>
+        </div>
+</md-tab>
 
 	  <md-tab md-label="Profil" md-icon="account_box"> <!--contacts-->
-      <div id="presentation"></div>
-        <div class="about__wrapper">
-            <div class="layout__dynamic-title-wrapper" >
-                <h1 class="layout__dynamic-title">Présentation &amp; Carrière</h1>
-            </div>
-            <div class="about__row">
-                <section class="about__section">
-                    <img src="img/frederickarmando_color_compressed.jpg" id="frederickarmando" alt="Portrait Frédérick Armando">
-                    <!--<md-tooltip md-direction="bottom">Hi, it's nice to have you here!</md-tooltip>
+        <div class="ie-fixMinHeight-2">
+            <div id="presentation"></div>
+            <div class="about__wrapper">
+                <div class="layout__dynamic-title-wrapper">
+                    <h1 class="layout__dynamic-title">Présentation &amp; Carrière</h1>
+                </div>
+                <div class="about__row">
+                    <section class="about__section">
+                        <img src="img/frederickarmando_color_compressed.jpg" id="frederickarmando" alt="Portrait Frédérick Armando">
+                        <!--<md-tooltip md-direction="bottom">Hi, it's nice to have you here!</md-tooltip>
                     <a href="#background"><md-icon>arrow_drop_down</md-icon></a>-->
-                    <div class="me-arrow">
-                        <md-button class="md-icon-button md-raised md-dense" href="#background">
-                            <md-icon>arrow_drop_down</md-icon>
-                        </md-button>
-                    </div>
-                </section>
-                <section class="about__section" id="background">
-                    <h2 class="about__title">Parcours</h2>
-                    <p>Au fil des ans j'ai tenté de combiner plusieurs de mes centres d’intérêts tels que <b>le design graphique</b>, <b>le cinéma et les jeux vidéo</b> afin de travailler dans un domaine qui me correspond. C’est ainsi que j'ai découvert l’<b>UX Design</b>.</p>
-                    <p>J'ai débuté en 2012, à l’époque j'étais en charge du site internet de mon groupe de projet. Depuis, j'ai continué mon chemin avec divers projets tels qu'un <b><a href="http://virtua-media.fr/" target="_blank" class="link">jeu vidéo</a></b>, de l'<b><a href="http://d90.frederickarmando.com/" target="_blank" class="link">aide à la personne</a></b>, des <b><a href="http://ctpm.frederickarmando.com/" target="_blank" class="link">transports en communs</a></b>, un <b><a href="http://projets.frederickarmando.com/2016/GSixfours/guide-six-fours.com/2016prod/index.html" target="_blank" class="link">guide touristique</a></b> ainsi que le site d’une <b><a href="http://asc.frederickarmando.com/" target="_blank" class="link">agence de communication</a></b>. De plus, j'ai récemment travaillé sur une <b><a href="https://keluro.com/" target="_blank" class="link">application de gestion des emails</a></b>.</p> 
-                    <p><b>Ces responsabilités</b> m’ont permis d'étendre <b>mes connaissances</b> dans le but d'accroître <b>mon ouverture d'esprit et mon efficacité</b>.</p>
-                    <div class="me-before">
-                        <div class="me-arrow me-mid">
-                            <md-button class="md-icon-button md-raised md-dense" href="#presentation">
-                                <md-icon>arrow_drop_up</md-icon>
-                            </md-button>
-                        </div>
-                        <div class="me-arrow me-mid">
-                            <md-button class="md-icon-button md-raised md-dense" href="#studies">
+                        <div class="me-arrow">
+                            <md-button class="md-icon-button md-raised md-dense" href="#background">
                                 <md-icon>arrow_drop_down</md-icon>
                             </md-button>
                         </div>
-                    </div>
-                </section>
-                <section class="about__section" id="studies">
-                    <h2 class="about__title">Etudes</h2>
-                    <p>Je finalise un <b>Master en Design d’Interface Multimédia et Internet</b> (DIMI) à la Faculté de Communication de Créteil.</p> 
-                    <p>Cela fait suite à une <b>Licence Professionnelle en Web Design</b> (TAIS) à l'Université de Belfort, un <b>DUT dans les Métiers du Multimédia et de l’Internet</b> (MMI) à l’Université de Toulon et à un <b>Baccalauréat Scientifique</b> (ISN).</p>
-                    <div class="me-arrow">
-                        <md-button class="md-icon-button md-raised md-dense" href="#background">
-                            <md-icon>arrow_drop_up</md-icon>
-                        </md-button>
-                    </div>
-                </section>
+                    </section>
+                    <section class="about__section" id="background">
+                        <h2 class="about__title">Parcours</h2>
+                        <p>Au fil des ans j'ai tenté de combiner plusieurs de mes centres d’intérêts tels que <b>le design graphique</b>, <b>le cinéma et les jeux vidéo</b> afin de travailler dans un domaine qui me correspond. C’est ainsi que j'ai découvert l’<b>UX Design</b>.</p>
+                        <p>J'ai débuté en 2012, à l’époque j'étais en charge du site internet de mon groupe de projet. Depuis, j'ai continué mon chemin avec divers projets tels qu'un <b><a href="http://virtua-media.fr/" target="_blank" class="link">jeu vidéo</a></b>, de l'<b><a href="http://d90.frederickarmando.com/" target="_blank" class="link">aide à la personne</a></b>, des <b><a href="http://ctpm.frederickarmando.com/" target="_blank" class="link">transports en communs</a></b>, un <b><a href="http://projets.frederickarmando.com/2016/GSixfours/guide-six-fours.com/2016prod/index.html" target="_blank" class="link">guide touristique</a></b> ainsi que le site d’une <b><a href="http://asc.frederickarmando.com/" target="_blank" class="link">agence de communication</a></b>. De plus, j'ai récemment travaillé sur une <b><a href="https://keluro.com/" target="_blank" class="link">application de gestion des emails</a></b>.</p>
+                        <p><b>Ces responsabilités</b> m’ont permis d'étendre <b>mes connaissances</b> dans le but d'accroître <b>mon ouverture d'esprit et mon efficacité</b>.</p>
+                        <div class="me-before">
+                            <div class="me-arrow me-mid">
+                                <md-button class="md-icon-button md-raised md-dense" href="#presentation">
+                                    <md-icon>arrow_drop_up</md-icon>
+                                </md-button>
+                            </div>
+                            <div class="me-arrow me-mid">
+                                <md-button class="md-icon-button md-raised md-dense" href="#studies">
+                                    <md-icon>arrow_drop_down</md-icon>
+                                </md-button>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="about__section" id="studies">
+                        <h2 class="about__title">Etudes</h2>
+                        <p>Je finalise un <b>Master en Design d’Interface Multimédia et Internet</b> (DIMI) à la Faculté de Communication de Créteil.</p>
+                        <p>Cela fait suite à une <b>Licence Professionnelle en Web Design</b> (TAIS) à l'Université de Belfort, un <b>DUT dans les Métiers du Multimédia et de l’Internet</b> (MMI) à l’Université de Toulon et à un <b>Baccalauréat Scientifique</b> (ISN).</p>
+                        <div class="me-arrow">
+                            <md-button class="md-icon-button md-raised md-dense" href="#background">
+                                <md-icon>arrow_drop_up</md-icon>
+                            </md-button>
+                        </div>
+                    </section>
+                </div>
             </div>
         </div>
-      </md-tab>
+</md-tab>
 
 	  <md-tab md-label="Aptitudes" md-icon="equalizer">
         <iframe id="iframe1" src="./skl/index_fr.html" frameborder="0"></iframe>
@@ -278,65 +282,67 @@
 	  </md-tab>
 
 		<md-tab md-label="Contact" md-icon="email">
-            <div class="about__wrapper me-contact">
-                <div class="layout__dynamic-title-wrapper">
-                    <h1 class="layout__dynamic-title">Pour me contacter</h1>
-                </div>
+            <div class="ie-fixMinHeight-2">
+                <div class="about__wrapper me-contact">
+                    <div class="layout__dynamic-title-wrapper">
+                        <h1 class="layout__dynamic-title">Pour me contacter</h1>
+                    </div>
 
-                <div class="about__row">
-                    <section class="about__section">
-                        <h2 class="about__title">Si vous souhaitez me rencontrer</h2>
-                        <p>J'ai toujours plaisir à découvrir de nouvelles personnes autour d'une tasse de café.</p>
-                        <p><b>Où me trouver :</b><br /><b><a href="https://goo.gl/EhS9fp" target="_blank" class="link">6 Avenue de la République, Epinay-sur-Seine</a></b></p>
-                        <p>Vous pouvez m’appeler ou m’envoyer un message.<br /> Je répondrais aussi vite que possible. <br /><b><a href="tel:+33659054369" class="link">06 59 05 43 69</a></b> - <b><a href="callto:frederick-armando" class="link">Skype</a></b> - <b><a href="mailto:frederickarmando@gmail.com" class="link">Email</a></b></p>
-                        <p><b>Et également me retrouver sur :</b></p>
-                        <md-button href="https://www.linkedin.com/in/frederickarmando" target="_blank" class="md-fab md-primary md-mini md-clean me-social-2">
-                            <md-icon md-iconset="fa fa-linkedin me-icon-1"></md-icon>
-                            <md-tooltip md-direction="bottom">Linkedin</md-tooltip>
-                        </md-button>
-                        <md-button href="http://www.viadeo.com/p/0021338geljz1qcv" target="_blank" class="md-fab md-primary md-mini md-clean me-social-2">
-                            <md-icon md-iconset="fa fa-viadeo me-icon-2"></md-icon>
-                            <md-tooltip md-direction="bottom">Viadeo</md-tooltip>
-                        </md-button>
-                        <!--<md-button href="https://www.behance.net/frederickarmando" target="_blank" class="md-fab md-primary md-mini md-clean me-social-2">
-                            <md-icon md-iconset="fa fa-behance me-icon-1"></md-icon>
-                            <md-tooltip md-direction="bottom">Behance</md-tooltip>
-                        </md-button>-->
-                        <md-button href="https://www.youtube.com/channel/UC7TFv4Y5TEsn9yYFJmjRHvQ?view_as=subscriber" target="_blank" class="md-fab md-primary md-mini md-clean me-social-2">
-                            <md-icon md-iconset="fa fa-youtube-play me-icon-1"></md-icon>
-                            <md-tooltip md-direction="bottom">Youtube</md-tooltip>
-                        </md-button>
-                        <md-button href="https://github.com/frederick-armando" target="_blank" class="md-fab md-primary md-mini md-clean me-social-2">
-                            <md-icon md-iconset="fa fa-github me-icon-2"></md-icon>
-                            <md-tooltip md-direction="bottom">Github</md-tooltip>
-                        </md-button>
-                    </section>
+                    <div class="about__row">
+                        <section class="about__section">
+                            <h2 class="about__title">Si vous souhaitez me rencontrer</h2>
+                            <p>J'ai toujours plaisir à découvrir de nouvelles personnes autour d'une tasse de café.</p>
+                            <p><b>Où me trouver :</b><br /><b><a href="https://goo.gl/EhS9fp" target="_blank" class="link">6 Avenue de la République, Epinay-sur-Seine</a></b></p>
+                            <p>Vous pouvez m’appeler ou m’envoyer un message.<br /> Je répondrais aussi vite que possible. <br /><b><a href="tel:+33659054369" class="link">06 59 05 43 69</a></b> - <b><a href="callto:frederick-armando" class="link">Skype</a></b> - <b><a href="mailto:frederickarmando@gmail.com" class="link">Email</a></b></p>
+                            <p><b>Et également me retrouver sur :</b></p>
+                            <md-button href="https://www.linkedin.com/in/frederickarmando" target="_blank" class="md-fab md-primary md-mini md-clean me-social-2">
+                                <md-icon md-iconset="fa fa-linkedin me-icon-1"></md-icon>
+                                <md-tooltip md-direction="bottom">Linkedin</md-tooltip>
+                            </md-button>
+                            <md-button href="http://www.viadeo.com/p/0021338geljz1qcv" target="_blank" class="md-fab md-primary md-mini md-clean me-social-2">
+                                <md-icon md-iconset="fa fa-viadeo me-icon-2"></md-icon>
+                                <md-tooltip md-direction="bottom">Viadeo</md-tooltip>
+                            </md-button>
+                            <!--<md-button href="https://www.behance.net/frederickarmando" target="_blank" class="md-fab md-primary md-mini md-clean me-social-2">
+                        <md-icon md-iconset="fa fa-behance me-icon-1"></md-icon>
+                        <md-tooltip md-direction="bottom">Behance</md-tooltip>
+                    </md-button>-->
+                            <md-button href="https://www.youtube.com/channel/UC7TFv4Y5TEsn9yYFJmjRHvQ?view_as=subscriber" target="_blank" class="md-fab md-primary md-mini md-clean me-social-2">
+                                <md-icon md-iconset="fa fa-youtube-play me-icon-1"></md-icon>
+                                <md-tooltip md-direction="bottom">Youtube</md-tooltip>
+                            </md-button>
+                            <md-button href="https://github.com/frederick-armando" target="_blank" class="md-fab md-primary md-mini md-clean me-social-2">
+                                <md-icon md-iconset="fa fa-github me-icon-2"></md-icon>
+                                <md-tooltip md-direction="bottom">Github</md-tooltip>
+                            </md-button>
+                        </section>
 
-                    <section class="about__section">
-                        <h2 class="about__title">Sinon vous avez la possibilité de remplir le formulaire ci-dessous</h2>
-                        <form method="POST" action="http://formspree.io/frederickarmando@gmail.com">
-                            <md-input-container>
-                                <md-icon>mail_outline</md-icon>
-                                <label>Votre email</label>
-                                <md-input type="email" name="email"></md-input>
-                            </md-input-container>
-                            <md-input-container>
-                                <md-icon>title</md-icon>
-                                <label>Votre sujet</label>
-                                <md-input type="object" name="_subject"></md-input>
-                            </md-input-container>
-                            <md-input-container>
-                                <md-icon>subject</md-icon>
-                                <label>Votre message</label>
-                                <md-input name="message" maxlength="280"></md-input>
-                            </md-input-container>
-                            <md-button class="md-raised md-primary me-button" type="submit">Envoyer le message</md-button>
-                            <input type="hidden" name="_next" value="http://frederickarmando.fr" />
-                        </form>
-                    </section>
+                        <section class="about__section">
+                            <h2 class="about__title">Sinon vous avez la possibilité de remplir le formulaire ci-dessous</h2>
+                            <form method="POST" action="http://formspree.io/frederickarmando@gmail.com">
+                                <md-input-container>
+                                    <md-icon>mail_outline</md-icon>
+                                    <label>Votre email</label>
+                                    <md-input type="email" name="email"></md-input>
+                                </md-input-container>
+                                <md-input-container>
+                                    <md-icon>title</md-icon>
+                                    <label>Votre sujet</label>
+                                    <md-input type="object" name="_subject"></md-input>
+                                </md-input-container>
+                                <md-input-container>
+                                    <md-icon>subject</md-icon>
+                                    <label>Votre message</label>
+                                    <md-input name="message" maxlength="280"></md-input>
+                                </md-input-container>
+                                <md-button class="md-raised md-primary me-button" type="submit">Envoyer le message</md-button>
+                                <input type="hidden" name="_next" value="http://frederickarmando.fr" />
+                            </form>
+                        </section>
+                    </div>
                 </div>
             </div>
-        </md-tab>
+</md-tab>
 	</md-tabs>
 
   </div>

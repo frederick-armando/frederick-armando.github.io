@@ -1,0 +1,53 @@
+.me-social{
+    margin-right: 150px;
+}
+
+.md-toolbar img{
+    height: auto !important;
+}
+
+.ie-fixMinHeight {
+    flex-grow: 1;
+    margin-top: 12%;
+}
+
+.ie-fixMinHeight-2 {
+    flex-grow: 1;
+    margin-top: 8%;
+}
+
+.ie-fixButton {
+    text-align: center;
+}
+
+button.md-button.md-fab.md-theme-purple .md-icon, a.md-button.md-fab.md-primary.md-mini.md-clean.md-theme-purple .md-icon {
+    color: #8728fe;
+}
+
+.md-tabs .md-tab-header-container{
+    padding-bottom: 15px;
+}
+
+.md-button.md-icon-button .md-icon, .md-button.md-fab .md-icon {
+    bottom: -7px;
+}
+
+.md-theme-default.md-toolbar, .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-indicator {
+    background-color: #517bfc !important;
+}
+
+:not([disabled]):not(.md-icon-button).md-theme-default.md-button.md-raised {
+    background-color: #8728fe !important;
+}
+
+.me-icon-2{
+    bottom: 0 !important;
+}
+
+.md-tabs .md-tab-header{
+    text-transform: inherit;
+}
+
+.me-menu{
+    padding-top: 5px;
+}
