@@ -497,34 +497,12 @@ form {
 }
 
 /*Cookie*/
-/*.cc-floating.cc-theme-classic {
-    text-align: center;
-    font-size: 0.95rem;
-    border-radius: 0px !important;
-    width: 100vw;
-    max-width: 100vw !important;
-    top: 0;
-    padding-bottom: 0.6em !important;
-    flex-direction: row !important;
-    justify-content: space-between;
-    align-items: baseline;
+.cookiebanner {
+    top: 65px !important;
 }
-
-a.cc-btn.cc-dismiss {
-    font-size: 0.85rem;
-    min-width: 64px !important;
-    max-width: 96px !important;
-    &:hover {
-        text-decoration: none;
-    }
-}*/
 
 .md-theme-default a:not(.md-button) {
     color: #678cfc !important;
-}
-
-a.cc-btn.cc-dismiss {
-    color: white !important;
 }
 
 /*Loader*/
