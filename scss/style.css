@@ -204,7 +204,8 @@ h2 {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 500; }
   h2.me-intro {
-    text-align: center; }
+    text-align: center;
+    line-height: normal; }
 
 p {
   font-family: "Gilroy", Arial, sans-serif; }
