@@ -88,6 +88,10 @@ body {
     }
 }
 
+.md-tooltip {
+    border-radius: 50px;
+}
+
 .md-tooltip.md-tooltip-bottom {
     margin-top: 18px !important;
 }
@@ -102,7 +106,7 @@ body {
 }
 
 @media screen and (max-width: $break-small) {
-    .md-tooltip-top, .network {
+    /*.md-tooltip-top, */.network {
         display: none;
     }
 }
