@@ -31,8 +31,7 @@ body {
 
 .md-button.md-icon-button.md-dense {
   box-shadow: none;
-  color: rgba(255, 255, 255, 0.75);
-  margin-top: 4px; }
+  color: rgba(255, 255, 255, 0.75); }
   .md-button.md-icon-button.md-dense:hover {
     color: #ffffff; }
   .md-button.md-icon-button.md-dense:first-child {
@@ -242,6 +241,9 @@ b {
   letter-spacing: 2.5px; }
   .me-button:hover {
     box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 5px 8px rgba(0, 0, 0, 0.14), 0 1px 14px rgba(0, 0, 0, 0.12); }
+
+.md-button[disabled] {
+  background: rgba(0, 0, 0, 0.12) !important; }
 
 /*Content Profile*/
 .about__row {
