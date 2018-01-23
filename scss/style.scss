@@ -229,7 +229,7 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
     background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
     height: 5px;
 
-    @media screen and (max-width: $break-small) {
+    @media screen and (max-width: $break-small+80px) {
         display: none;
     }
 }

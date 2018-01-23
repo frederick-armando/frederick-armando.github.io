@@ -165,7 +165,7 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
 .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-indicator {
   background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
   height: 5px; }
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 500px) {
     .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-indicator {
       display: none; } }
 
