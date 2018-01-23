@@ -335,6 +335,10 @@ b {
     }
 }
 
+.md-button[disabled] {
+    background: rgba(0, 0, 0, 0.12) !important;
+}
+
 /*Content Profile*/
 .about__row {
     display: -webkit-box;
