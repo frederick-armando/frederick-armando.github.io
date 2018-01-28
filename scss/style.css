@@ -1,16 +1,11 @@
 ﻿@font-face {
-  font-family: 'Gilroy';
-  src: url("../fonts/Gilroy.eot");
-  /* IE9+ Compat Modes */
-  src: url("../fonts/Gilroy.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy.woff2") format("woff2"), url("../fonts/Gilroy.woff") format("woff"), url("../fonts/Gilroy.ttf") format("truetype"), url("../fonts/Gilroy.svg#FontName") format("svg");
-  /* Legacy iOS */ }
+  font-family: Gilroy;
+  src: url("../fonts/Gilroy.otf") format("opentype"); }
 
 @font-face {
-  font-family: 'GilroyBold';
-  src: url("../fonts/GilroyBold.eot");
-  /* IE9+ Compat Modes */
-  src: url("../fonts/GilroyBold.eot?#iefix") format("embedded-opentype"), url("../fonts/GilroyBold.woff2") format("woff2"), url("../fonts/GilroyBold.woff") format("woff"), url("../fonts/GilroyBold.ttf") format("truetype"), url("../fonts/GilroyBold.svg#FontName") format("svg");
-  /* Legacy iOS */ }
+  font-family: GilroyBold;
+  font-weight: bold;
+  src: url("../fonts/GilroyBold.otf") format("opentype"); }
 
 [v-cloak] {
   display: none; }
