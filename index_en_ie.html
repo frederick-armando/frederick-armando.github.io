@@ -41,11 +41,10 @@
     <meta property="og:image:height" content="200">
 
     <!--css-->
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
     <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+
     <link rel='stylesheet prefetch' href='https://unpkg.com/vue-material@0.8.1/dist/vue-material.css'>
-	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf" />
 
     <link rel="stylesheet" href="scss/style.min.css">
     <link rel="stylesheet" href="scss/style_ie.css">
@@ -63,9 +62,9 @@
 		<img class="me-logo" alt="Logo Frédérick Armando" src="img/Logo_Full_White.svg"/>
 	</div>
         <div class="me-social">
-            <md-button class="md-icon-button md-raised md-dense" href="https://uxvr.fr" target="_blank">
-                <md-icon>turned_in</md-icon>
-                <md-tooltip md-direction="bottom">UXVR Blog</md-tooltip>
+            <md-button class="md-icon-button md-raised md-dense" href="index.html">
+                <md-icon>language</md-icon> <!--apps-->
+                <md-tooltip md-direction="bottom">En Français</md-tooltip>
             </md-button>
             <md-button class="md-icon-button md-raised md-dense" href="docs/en_cv_frederick_armando.pdf">
                 <md-icon>assignment</md-icon> <!--get_app-->
@@ -80,9 +79,9 @@
                     <md-icon>more_vert</md-icon>
                     <md-tooltip md-direction="top">Options</md-tooltip>
                 </md-button>
-                <md-button class="md-icon-button md-raised md-dense" href="index.html">
-                    <md-icon>language</md-icon> <!--apps-->
-                    <md-tooltip md-direction="bottom">En Français</md-tooltip>
+                <md-button class="md-icon-button md-raised md-dense" href="https://uxvr.fr" target="_blank">
+                    <md-icon>turned_in</md-icon>
+                    <md-tooltip md-direction="bottom">Blog</md-tooltip>
                 </md-button>
         </div>
 	</md-toolbar>
@@ -120,13 +119,13 @@
 	<md-tabs md-centered>
 	  <md-tab md-label="Home" md-icon="home">
         <div class="ie-fixMinHeight">
-            <img src="img/Logo_Full_compressed.svg" id="logo" alt="Logo Complet Frédérick Armando">
-            <h2 class="me-intro">Hi, I'm a <span id="monage"></span> years old <b>UX Designer</b> based in Paris, France.</h2>
-            <div class="ie-fixButton">
+            <img src="img/Logo_Full2_compressed.svg" id="logo" alt="Logo Complet Frédérick Armando">
+            <h2 class="me-intro"><span id="monage"></span> years old French <b>UX Designer</b>, currently working at <b>Ankama Games</b></h2>
+            <div>
                 <!--<md-button class="md-raised md-accent">Currently working at Keluro</md-button>-->
-                <md-button class="md-raised md-primary me-button" href="mailto:frederickarmando@gmail.com?subject=[website] Making contact&body=Hi, I'm guessing you might be interested in a job..."><!--disabled-->Currently at Ankama</md-button>
-                <!--<md-tooltip md-direction="bottom">From February to August 2018</md-tooltip>-->
-                <md-tooltip md-direction="top">Send me your proposals</md-tooltip>
+                <md-button class="md-raised md-primary me-button" href="mailto:frederickarmando@gmail.com?subject=[website] Making contact&body=Hi, I'm guessing you might be interested in a job..."><!--disabled-->Contact me</md-button>
+                <!--<md-tooltip md-direction="bottom">From February to August 2018</md-tooltip>
+        <md-tooltip md-direction="top">Send me your proposals</md-tooltip>-->
             </div>
 
             <script type="text/javascript">
@@ -269,7 +268,7 @@
         <iframe id="iframe1" src="./skl/index.html" frameborder="0"></iframe>
 	  </md-tab>
 
-	  <md-tab md-label="Projects" md-icon="view_agenda">
+	  <md-tab md-label="Works" md-icon="view_agenda">
         <iframe id="iframe2" src="./prj/index.html" frameborder="0"></iframe>
 	  </md-tab>
 
