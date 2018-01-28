@@ -198,9 +198,7 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
         }
 
         i {
-            background: -webkit-linear-gradient(left top,#517bfc,#645ffd);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: #517bfc !important;
         }
 
         span {

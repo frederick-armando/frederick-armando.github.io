@@ -144,9 +144,7 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
   .md-tabs .md-tab-header.md-active i {
-    background: -webkit-linear-gradient(left top, #517bfc, #645ffd);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
+    color: #517bfc !important; }
   .md-tabs .md-tab-header.md-active span {
     font-family: "GilroyBold",Arial,sans-serif;
     font-weight: bold; }
