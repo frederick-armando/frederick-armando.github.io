@@ -303,6 +303,7 @@ body {
         height: calc(100% + 400px);
         background-size: cover;
         background-position: 50% 50%;
+        opacity: 0.5;
     }
 
     .slidenav {
