@@ -40,7 +40,7 @@
                         easing: {in: 'easeOutQuint', out: 'easeOutQuad'}
                     }
                 },
-                frameFill: '#f1f1f1'
+                frameFill: '#fff'
             }
             this.init();
         }
