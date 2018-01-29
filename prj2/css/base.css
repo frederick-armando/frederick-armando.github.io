@@ -30,14 +30,15 @@ html {
 }
 
 body {
-	font-family: Gilroy, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-	min-height: 100vh;
-	color: #57585c;
-	/*color: var(--color-text);*/
-	background-color: #fff;
-	/*background-color: var(--color-bg);*/
-	-webkit-font-smoothing: antialiased;
-	/*-moz-osx-font-smoothing: grayscale;*/
+    font-family: Gilroy, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    color: #57585c;
+    /*color: var(--color-text);*/
+    background-color: #fff;
+    /*background-color: var(--color-bg);*/
+    -webkit-font-smoothing: antialiased;
+    /*-moz-osx-font-smoothing: grayscale;*/
+    overflow: hidden;
 }
 
 /* Color schemes */
@@ -291,13 +292,15 @@ a.demo--current {
     position: absolute;
     width: 100%;
     /*margin-left: -150px;
-    left: 50%;*/
-    bottom: 0;
+    left: 50%;
+    bottom: 0;*/
+    top: 0;
     text-align: center;
     padding: 1em;
     background: #ffffff;
     font-family: GilroyBold;
     font-weight: bold;
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.02), 0 5px 8px rgba(0, 0, 0, 0.04), 0 1px 14px rgba(0, 0, 0, 0.02);
 }
 
 .slidenav__item {
@@ -307,6 +310,14 @@ a.demo--current {
     color: #678cfc;
     font-family: GilroyBold;
     transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.slidenav__item--prev {
+    float: left;
+}
+
+.slidenav__item--next {
+    float: right;
 }
 
 .slidenav__item:focus {
@@ -369,8 +380,8 @@ a.demo--current {
     font-family: Gilroy;
     text-transform: uppercase;
     /*background: -webkit-linear-gradient(left top,rgba(81,123,252,1),rgba(135,40,254,1));*/
-    min-width: 88px;
-    min-height: 36px;
+    /*min-width: 88px;
+    min-height: 36px;*/
     margin: 6px 8px;
     letter-spacing: 2.5px;
     padding: .5em 1em;
@@ -477,8 +488,8 @@ a.demo--current {
 
 .link:hover:before {
     visibility: visible;
-    -webkit-transform: scaleX(0.75);
-    transform: scaleX(0.75);
+    -webkit-transform: scaleX(0.8);
+    transform: scaleX(0.8);
 }
 
 .link:visited {
