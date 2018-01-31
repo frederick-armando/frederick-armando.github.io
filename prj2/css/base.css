@@ -75,6 +75,12 @@ body {
     }
 }
 
+@media screen and (max-width: 360px) {
+    .demo-1 {
+        --fontsize-stitle: 16vw;
+    }
+}
+
     /* Fade effect */
     .js body {
         opacity: 0;
