@@ -308,17 +308,18 @@ body {
 
     .slidenav {
         position: absolute;
-        width: 100%;
-        /*margin-left: -150px;
-    left: 50%;
-    bottom: 0;*/
-        top: 0;
+        width: 20%;
+        left: 24px;
+        bottom: 24px;
         text-align: center;
         padding: 1em;
         background: #ffffff;
         font-family: GilroyBold;
         font-weight: bold;
         box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.02), 0 5px 8px rgba(0, 0, 0, 0.04), 0 1px 14px rgba(0, 0, 0, 0.02);
+        border-radius: 50px;
+        min-width: 215px;
+        max-width: 245px;
     }
 
     .slidenav__item {
@@ -536,10 +537,10 @@ body {
     }
 }
 
-.link3 {
+/*.link3 {
     background: white;
     color: #5575fc;
-}
+}*/
 
 .link4 {
     background: white;
