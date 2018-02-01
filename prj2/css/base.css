@@ -313,7 +313,7 @@ body {
     }
 
     .slidenav {
-        position: absolute;
+        position: fixed;
         width: 20%;
         left: 24px;
         bottom: 24px;
