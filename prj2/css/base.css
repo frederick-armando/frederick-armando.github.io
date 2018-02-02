@@ -315,8 +315,12 @@ body {
     .slidenav {
         position: fixed;
         width: 20%;
-        left: 24px;
-        bottom: 24px;
+        /*left: 24px;
+        bottom: 24px;*/
+            right: 24px;
+            top: 24px;
+            left: unset;
+            bottom: unset;
         text-align: center;
         padding: 1em;
         background: #ffffff;
