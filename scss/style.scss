@@ -23,7 +23,7 @@ body {
 
 /*Toolbar*/
 .md-toolbar {
-    background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
+    background: -webkit-linear-gradient(left top,#3884dc,#685fde);
     justify-content: space-between;
         position: sticky;
         top: 0;
@@ -192,7 +192,7 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
 
     &.md-active {
         span {
-            background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
+            background: -webkit-linear-gradient(left top,#3884dc,#685fde);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -224,7 +224,7 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
 }
 
 .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-indicator {
-    background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
+    background: -webkit-linear-gradient(left top,#3884dc,#685fde);
     height: 5px;
 
     @media screen and (max-width: $break-small+80px) {
@@ -251,7 +251,7 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
 }
 
 .md-theme-default.md-tabs>.md-tabs-navigation .md-tab-header-navigation-button {
-    background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
+    background: -webkit-linear-gradient(left top,#3884dc,#685fde);
 }
 
 button.md-tab-header-navigation-button.md-left.md-disabled {

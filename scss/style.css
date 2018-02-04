@@ -15,7 +15,7 @@ body {
 
 /*Toolbar*/
 .md-toolbar {
-  background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
+  background: -webkit-linear-gradient(left top, #3884dc, #685fde);
   justify-content: space-between;
   position: sticky;
   top: 0;
@@ -140,7 +140,7 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
     .md-tabs .md-tab-header {
       font-family: "GilroyBold",Arial,sans-serif; } }
   .md-tabs .md-tab-header.md-active span {
-    background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
+    background: -webkit-linear-gradient(left top, #3884dc, #685fde);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
   .md-tabs .md-tab-header.md-active i {
@@ -161,7 +161,7 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
         letter-spacing: 0px; } }
 
 .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-indicator {
-  background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
+  background: -webkit-linear-gradient(left top, #3884dc, #685fde);
   height: 5px; }
   @media screen and (max-width: 500px) {
     .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-indicator {
@@ -180,7 +180,7 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
     margin-right: 5px; } }
 
 .md-theme-default.md-tabs > .md-tabs-navigation .md-tab-header-navigation-button {
-  background: -webkit-linear-gradient(left top, #517bfc, #8728fe); }
+  background: -webkit-linear-gradient(left top, #3884dc, #685fde); }
 
 button.md-tab-header-navigation-button.md-left.md-disabled {
   display: none; }

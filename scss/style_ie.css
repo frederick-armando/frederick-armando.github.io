@@ -25,7 +25,7 @@ _:-ms-fullscreen, :root .me-social {
 .md-toolbar {
     background: #0A284B;
     background: -webkit-gradient(linear, left top, right bottom, from(#517bfc), to(#8728fe));
-    background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
+    background: -webkit-linear-gradient(left top,#3884dc,#685fde);
     background: -moz-linear-gradient(left top, #517bfc, #8728fe);
     background: -ms-linear-gradient(left top, #517bfc, #8728fe);
     background: -o-linear-gradient(left top, #517bfc, #8728fe);
@@ -63,7 +63,7 @@ _:-ms-fullscreen, :root .md-toolbar img {
 button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.md-clean.md-theme-purple {
     background: #0A284B;
     background: -webkit-gradient(linear, left top, right bottom, from(#517bfc), to(#8728fe));
-    background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
+    background: -webkit-linear-gradient(left top,#3884dc,#685fde);
     background: -moz-linear-gradient(left top, #517bfc, #8728fe);
     background: -ms-linear-gradient(left top, #517bfc, #8728fe);
     background: -o-linear-gradient(left top, #517bfc, #8728fe);
@@ -84,7 +84,7 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
     background-color: #517bfc !important;
     background: #0A284B;
     background: -webkit-gradient(linear, left top, right bottom, from(#517bfc), to(#8728fe));
-    background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
+    background: -webkit-linear-gradient(left top,#3884dc,#685fde);
     background: -moz-linear-gradient(left top, #517bfc, #8728fe);
     background: -ms-linear-gradient(left top, #517bfc, #8728fe);
     background: -o-linear-gradient(left top, #517bfc, #8728fe);
@@ -97,7 +97,7 @@ button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.m
     background-color: #8728fe !important;
     background: #0A284B;
     background: -webkit-gradient(linear, left top, right bottom, from(#517bfc), to(#8728fe));
-    background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
+    background: -webkit-linear-gradient(left top,#3884dc,#685fde);
     background: -moz-linear-gradient(left top, #517bfc, #8728fe);
     background: -ms-linear-gradient(left top, #517bfc, #8728fe);
     background: -o-linear-gradient(left top, #517bfc, #8728fe);
