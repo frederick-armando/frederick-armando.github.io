@@ -423,7 +423,7 @@ button:focus {
 	height: 1.25rem;
 }
 
-@media screen and (min-width: 27.51em) and (min-height: 20.01em) {
+@media screen and (min-width: 45em) and (min-height: 30em) {
 	.sections {
 		height: 100vh;
 		overflow: hidden;
@@ -665,7 +665,7 @@ button:focus {
 	}
 }
 
-@media screen and (max-width: 27.5em), screen and (max-height: 20em) {
+@media screen and (max-width: 44.9em), screen and (max-height: 29.9em) {
 	.js .section__title span,
 	.js .section__description,
 	.js .section__img-inner,
