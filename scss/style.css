@@ -85,7 +85,7 @@ body {
 
 /*Speed-dial*/
 button.md-button.md-fab.md-theme-purple, a.md-button.md-fab.md-primary.md-mini.md-clean.md-theme-purple {
-  background: -webkit-linear-gradient(left top, rgba(81, 123, 252, 0.75), rgba(135, 40, 254, 0.75)); }
+  background: -webkit-linear-gradient(left top, #3884dc, #685fde); }
   button.md-button.md-fab.md-theme-purple .md-icon, a.md-button.md-fab.md-primary.md-mini.md-clean.md-theme-purple .md-icon {
     color: #ffffff; }
 
@@ -238,8 +238,7 @@ b {
     color: #517bfc !important; }
 
 .me-button {
-  background: -webkit-linear-gradient(left top, #517bfc, #8728fe);
-  background: -webkit-linear-gradient(left top, rgba(81, 123, 252, 0.75), rgba(135, 40, 254, 0.75)) !important;
+  background: -webkit-linear-gradient(left top, #3884dc, #685fde) !important;
   font-family: "Gilroy",Arial,sans-serif;
   letter-spacing: 2.5px;
   border-radius: 50px; }
