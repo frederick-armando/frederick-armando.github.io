@@ -508,9 +508,9 @@ form {
     top: 65px !important;
 }
 
-.md-theme-default a:not(.md-button) {
+/*.md-theme-default a:not(.md-button) {
     color: #678cfc !important;
-}
+}*/
 
 /*Loader*/
 .spinner {
@@ -595,4 +595,8 @@ form {
 ._hj-f5b2a1eb-9b07_widget ._hj-f5b2a1eb-9b07_icon::before {
     color: inherit !important;
     color: white !important;
+}
+
+._hj-f5b2a1eb-9b07_feedback_minimized_message_close._hj-f5b2a1eb-9b07_link_no_underline._hj-f5b2a1eb-9b07_icon._hj-f5b2a1eb-9b07_icon-x._hj-f5b2a1eb-9b07_transition {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12);
 }
